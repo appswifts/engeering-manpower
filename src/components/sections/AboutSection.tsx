@@ -1,10 +1,7 @@
-
 import { Link } from 'react-router-dom';
 import { CheckCircle, Hammer } from 'lucide-react';
-
 const AboutSection = () => {
-  return (
-    <section className="py-20">
+  return <section className="py-20">
       <div className="container-fluid">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
@@ -42,11 +39,7 @@ const AboutSection = () => {
           
           <div className="order-1 lg:order-2 relative">
             <div className="aspect-w-4 aspect-h-3 rounded-xl overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3" 
-                alt="Engineering team" 
-                className="object-cover w-full h-full"
-              />
+              <img alt="Engineering team" className="object-cover w-full h-full" src="/lovable-uploads/1e05c867-79ad-4163-b0df-35c25dd53a6d.jpg" />
             </div>
             
             <div className="absolute -bottom-6 -left-6 bg-white rounded-lg shadow-lg py-4 px-6 max-w-xs">
@@ -61,8 +54,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
