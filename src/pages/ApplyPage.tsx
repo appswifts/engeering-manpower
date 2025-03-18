@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Upload, CheckCircle, AlertCircle } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
@@ -47,7 +48,7 @@ const ApplyPage = () => {
       setLoading(false);
       
       // Open WhatsApp with pre-filled message
-      window.open(`https://wa.me/250788409258?text=${whatsappMessage}`, '_blank');
+      window.open(`https://wa.me/250788881370?text=${whatsappMessage}`, '_blank');
       
       // Show notification about resume
       if (fileSelected) {
