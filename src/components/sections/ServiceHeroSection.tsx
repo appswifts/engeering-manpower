@@ -1,24 +1,13 @@
-
 import { Link } from 'react-router-dom';
-import { 
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger
-} from "@/components/ui/navigation-menu";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { Zap, Wrench, Building, GraduationCap, Shield } from 'lucide-react';
-
 const ServiceHeroSection = () => {
-  return (
-    <section className="relative py-24 bg-secondary">
+  return <section className="relative py-24 bg-secondary">
       <div className="absolute inset-0 bg-secondary/90"></div>
-      <div 
-        className="absolute inset-0 opacity-20 bg-cover bg-center"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80")' }}
-      ></div>
+      <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{
+      backgroundImage: 'url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80")'
+    }}></div>
       <div className="absolute inset-0 opacity-30 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       
       <div className="container-fluid relative z-10">
@@ -42,11 +31,7 @@ const ServiceHeroSection = () => {
           
           <div className="w-full md:w-1/2 lg:w-2/5">
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1486718448742-163732cd1544?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Engineering services" 
-                className="rounded-lg shadow-xl z-10 relative"
-              />
+              <img alt="Engineering services" className="rounded-lg shadow-xl z-10 relative" src="/lovable-uploads/4d6bf7ed-8cda-4b9e-a4f2-2a19eb59f45d.jpg" />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
                 29+ Years
               </div>
@@ -66,10 +51,7 @@ const ServiceHeroSection = () => {
                   <ul className="grid w-[400px] gap-3 p-4">
                     <li className="row-span-3">
                       <NavigationMenuLink asChild>
-                        <Link
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary/50 to-primary p-6 no-underline outline-none focus:shadow-md"
-                          to="/services/electrical-installation"
-                        >
+                        <Link className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary/50 to-primary p-6 no-underline outline-none focus:shadow-md" to="/services/electrical-installation">
                           <Zap className="h-6 w-6 text-white" />
                           <div className="mt-4 mb-2 text-lg font-medium text-white">
                             Electrical Installation & Maintenance
@@ -81,10 +63,7 @@ const ServiceHeroSection = () => {
                       </NavigationMenuLink>
                     </li>
                     <li>
-                      <Link
-                        to="/services/electrical-installation/residential"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
+                      <Link to="/services/electrical-installation/residential" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium leading-none">Residential</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Electrical installations for homes and apartments
@@ -92,10 +71,7 @@ const ServiceHeroSection = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/services/electrical-installation/commercial"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
+                      <Link to="/services/electrical-installation/commercial" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium leading-none">Commercial</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Electrical systems for offices and retail spaces
@@ -103,10 +79,7 @@ const ServiceHeroSection = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/services/electrical-installation/industrial"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
+                      <Link to="/services/electrical-installation/industrial" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium leading-none">Industrial</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Heavy-duty electrical solutions for factories
@@ -126,10 +99,7 @@ const ServiceHeroSection = () => {
                   <ul className="grid w-[400px] gap-3 p-4">
                     <li className="row-span-3">
                       <NavigationMenuLink asChild>
-                        <Link
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-secondary/50 to-secondary p-6 no-underline outline-none focus:shadow-md"
-                          to="/services/mechatronics"
-                        >
+                        <Link className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-secondary/50 to-secondary p-6 no-underline outline-none focus:shadow-md" to="/services/mechatronics">
                           <Wrench className="h-6 w-6 text-white" />
                           <div className="mt-4 mb-2 text-lg font-medium text-white">
                             Mechatronics Solutions
@@ -141,10 +111,7 @@ const ServiceHeroSection = () => {
                       </NavigationMenuLink>
                     </li>
                     <li>
-                      <Link
-                        to="/services/mechatronics/automation"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
+                      <Link to="/services/mechatronics/automation" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium leading-none">Industrial Automation</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Automated manufacturing systems and robotic solutions
@@ -152,10 +119,7 @@ const ServiceHeroSection = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/services/mechatronics/control-systems"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
+                      <Link to="/services/mechatronics/control-systems" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium leading-none">Control Systems</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           PLC and SCADA systems for industrial applications
@@ -175,10 +139,7 @@ const ServiceHeroSection = () => {
                   <ul className="grid w-[400px] gap-3 p-4">
                     <li className="row-span-3">
                       <NavigationMenuLink asChild>
-                        <Link
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary/50 to-primary p-6 no-underline outline-none focus:shadow-md"
-                          to="/services/civil-works"
-                        >
+                        <Link className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary/50 to-primary p-6 no-underline outline-none focus:shadow-md" to="/services/civil-works">
                           <Building className="h-6 w-6 text-white" />
                           <div className="mt-4 mb-2 text-lg font-medium text-white">
                             Civil Engineering Services
@@ -190,10 +151,7 @@ const ServiceHeroSection = () => {
                       </NavigationMenuLink>
                     </li>
                     <li>
-                      <Link
-                        to="/services/civil-works/structural"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
+                      <Link to="/services/civil-works/structural" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium leading-none">Structural Engineering</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Design and analysis of building structures
@@ -201,10 +159,7 @@ const ServiceHeroSection = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/services/civil-works/infrastructure"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
+                      <Link to="/services/civil-works/infrastructure" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium leading-none">Infrastructure Development</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Roads, bridges, and utility systems construction
@@ -224,10 +179,7 @@ const ServiceHeroSection = () => {
                   <ul className="grid w-[400px] gap-3 p-4">
                     <li className="row-span-3">
                       <NavigationMenuLink asChild>
-                        <Link
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-secondary/50 to-secondary p-6 no-underline outline-none focus:shadow-md"
-                          to="/services/training-internship"
-                        >
+                        <Link className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-secondary/50 to-secondary p-6 no-underline outline-none focus:shadow-md" to="/services/training-internship">
                           <GraduationCap className="h-6 w-6 text-white" />
                           <div className="mt-4 mb-2 text-lg font-medium text-white">
                             Training & Internship Programs
@@ -239,10 +191,7 @@ const ServiceHeroSection = () => {
                       </NavigationMenuLink>
                     </li>
                     <li>
-                      <Link
-                        to="/services/training-internship/technical"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
+                      <Link to="/services/training-internship/technical" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium leading-none">Technical Training</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Hands-on technical skills development
@@ -250,10 +199,7 @@ const ServiceHeroSection = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/services/training-internship/internships"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
+                      <Link to="/services/training-internship/internships" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium leading-none">Internship Program</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Structured internships for students and graduates
@@ -273,10 +219,7 @@ const ServiceHeroSection = () => {
                   <ul className="grid w-[400px] gap-3 p-4">
                     <li className="row-span-3">
                       <NavigationMenuLink asChild>
-                        <Link
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary/50 to-primary p-6 no-underline outline-none focus:shadow-md"
-                          to="/services/environmental-osh-consultancy"
-                        >
+                        <Link className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary/50 to-primary p-6 no-underline outline-none focus:shadow-md" to="/services/environmental-osh-consultancy">
                           <Shield className="h-6 w-6 text-white" />
                           <div className="mt-4 mb-2 text-lg font-medium text-white">
                             Environmental & OSH Consultancy
@@ -288,10 +231,7 @@ const ServiceHeroSection = () => {
                       </NavigationMenuLink>
                     </li>
                     <li>
-                      <Link
-                        to="/services/environmental-osh-consultancy/environmental"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
+                      <Link to="/services/environmental-osh-consultancy/environmental" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium leading-none">Environmental Assessment</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Environmental impact studies and compliance
@@ -299,10 +239,7 @@ const ServiceHeroSection = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/services/environmental-osh-consultancy/osh"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
+                      <Link to="/services/environmental-osh-consultancy/osh" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium leading-none">Occupational Safety & Health</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Workplace safety audits and risk assessment
@@ -316,8 +253,6 @@ const ServiceHeroSection = () => {
           </NavigationMenu>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ServiceHeroSection;
