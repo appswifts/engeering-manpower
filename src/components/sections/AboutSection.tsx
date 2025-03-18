@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { CheckCircle, Hammer } from 'lucide-react';
 const AboutSection = () => {
@@ -39,7 +40,7 @@ const AboutSection = () => {
           
           <div className="order-1 lg:order-2 relative">
             <div className="aspect-w-4 aspect-h-3 rounded-xl overflow-hidden shadow-xl">
-              <img alt="Engineering team" className="object-cover w-full h-full" src="/lovable-uploads/1e05c867-79ad-4163-b0df-35c25dd53a6d.jpg" />
+              <img alt="Engineering team" className="object-cover w-full h-full" src="/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png" />
             </div>
             
             <div className="absolute -bottom-6 -left-6 bg-white rounded-lg shadow-lg py-4 px-6 max-w-xs">

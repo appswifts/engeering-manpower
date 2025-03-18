@@ -139,7 +139,7 @@ const AboutPage = () => {
             <div>
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3" 
+                  src="/lovable-uploads/ea720679-b35b-49a0-b0db-ad5aa0a0d40b.png" 
                   alt="Our team" 
                   className="rounded-xl shadow-xl"
                 />
@@ -322,7 +322,7 @@ const AboutPage = () => {
             
             <div className="order-1 lg:order-2">
               <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3" 
+                src="/lovable-uploads/2bf25f7e-4a91-4582-a46c-b1724201c781.png" 
                 alt="Engineering expertise" 
                 className="rounded-xl shadow-xl"
               />

@@ -6,18 +6,50 @@ import { cn } from '@/lib/utils';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  // All shared images for the slideshow
+  const backgroundImages = [
+    "/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png",
+    "/lovable-uploads/ff6ffdf7-2f2b-4eea-bb43-9dead7285c1d.png",
+    "/lovable-uploads/ea720679-b35b-49a0-b0db-ad5aa0a0d40b.png",
+    "/lovable-uploads/67d1b2fa-e641-4d49-8315-7c3e003aefa8.png",
+    "/lovable-uploads/7c7e026e-6bdd-4da5-96ee-84bac4f9ad7d.png",
+    "/lovable-uploads/bdd801d0-4496-4a53-8b0f-d769174005d6.png",
+    "/lovable-uploads/5aa877d4-6691-495d-9285-f7c493100eef.png",
+    "/lovable-uploads/2bf25f7e-4a91-4582-a46c-b1724201c781.png",
+    "/lovable-uploads/6f06861d-83ea-4078-982e-b43f06f9461e.png",
+    "/lovable-uploads/1e05c867-79ad-4163-b0df-35c25dd53a6d.jpg",
+  ];
 
   useEffect(() => {
     setIsVisible(true);
+    
+    // Set up the image slideshow
+    const slideInterval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Change image every 5 seconds
+    
+    return () => clearInterval(slideInterval);
   }, []);
 
   return (
     <section className="relative min-h-screen flex items-center py-20 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 to-secondary/70 z-10"></div>
-      <div 
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80")' }}
-      ></div>
+      
+      {/* Background images with fade transition */}
+      {backgroundImages.map((image, index) => (
+        <div 
+          key={index}
+          className={cn(
+            "absolute inset-0 bg-cover bg-center z-0 transition-opacity duration-1000",
+            currentImageIndex === index ? "opacity-100" : "opacity-0"
+          )}
+          style={{ backgroundImage: `url("${image}")` }}
+        ></div>
+      ))}
       
       <div className="container-fluid relative z-20">
         <div className="max-w-3xl">
