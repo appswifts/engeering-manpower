@@ -45,7 +45,7 @@ const ServiceDetailsPage = () => {
                 subtitle="Our Services"
                 title={subtypeContent ? subtypeContent.title : service.title}
                 description={subtypeContent ? subtypeContent.short_description : service.description}
-                alignment="left"
+                align="left"
               />
               
               <Link to="/contact" className="btn btn-primary mt-6 inline-flex items-center">
