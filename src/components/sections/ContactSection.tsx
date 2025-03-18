@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const ContactSection = () => {
   // Function to handle WhatsApp redirect with form data
-  const handleWhatsAppSubmit = (e) => {
+  const handleWhatsAppSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+    const name = (document.getElementById('name') as HTMLInputElement)?.value;
+    const email = (document.getElementById('email') as HTMLInputElement)?.value;
+    const subject = (document.getElementById('subject') as HTMLSelectElement)?.value;
+    const message = (document.getElementById('message') as HTMLTextAreaElement)?.value;
     
     const whatsappMessage = `*New Inquiry*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Subject:* ${subject}%0A*Message:* ${message}`;
     window.open(`https://wa.me/250788409258?text=${whatsappMessage}`, '_blank');
