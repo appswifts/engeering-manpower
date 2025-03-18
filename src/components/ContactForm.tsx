@@ -39,7 +39,7 @@ const ContactForm = () => {
       setLoading(false);
       
       // Open WhatsApp with pre-filled message
-      window.open(`https://wa.me/250788409258?text=${whatsappMessage}`, '_blank');
+      window.open(`https://wa.me/250788881370?text=${whatsappMessage}`, '_blank');
       
       // Show success toast
       toast({

@@ -155,11 +155,11 @@ const Navbar = () => {
           {/* Contact Info */}
           <div className="hidden lg:flex items-center space-x-4">
             <a 
-              href="tel:+250788409258" 
+              href="tel:+250788881370" 
               className="flex items-center text-secondary hover:text-primary transition-colors"
             >
               <Phone size={18} className="mr-2" />
-              <span className="font-medium">+250 788 409 258</span>
+              <span className="font-medium">+250 788 881 370</span>
             </a>
             <Link 
               to="/contact" 
@@ -249,11 +249,11 @@ const Navbar = () => {
             
             <div className="pt-6 mt-6 border-t border-gray-100">
               <a 
-                href="tel:+250788409258" 
+                href="tel:+250788881370" 
                 className="flex items-center text-secondary hover:text-primary transition-colors"
               >
                 <Phone size={18} className="mr-2" />
-                <span className="font-medium">+250 788 409 258</span>
+                <span className="font-medium">+250 788 881 370</span>
               </a>
               
               <Link 
