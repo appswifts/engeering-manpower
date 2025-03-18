@@ -11,17 +11,17 @@ import {
   CarouselPrevious 
 } from '@/components/ui/carousel';
 
-// Updated array of images for the carousel with new uploaded images
+// Updated array of images for the carousel with only user uploaded images
 const carouselImages = [
-  "/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png", // Electrical workers with tower
-  "/lovable-uploads/ff6ffdf7-2f2b-4eea-bb43-9dead7285c1d.png", // Electrical panel work
-  "/lovable-uploads/ea720679-b35b-49a0-b0db-ad5aa0a0d40b.png", // Female technician
-  "/lovable-uploads/67d1b2fa-e641-4d49-8315-7c3e003aefa8.png", // Electrical technician with laptop
-  "/lovable-uploads/7c7e026e-6bdd-4da5-96ee-84bac4f9ad7d.png", // Electrical screwdriver work
-  "/lovable-uploads/bdd801d0-4496-4a53-8b0f-d769174005d6.png", // Electrical cabinet technician
-  "/lovable-uploads/5aa877d4-6691-495d-9285-f7c493100eef.png", // Forklift with generator
-  "/lovable-uploads/2bf25f7e-4a91-4582-a46c-b1724201c781.png", // Construction site with hardhats
-  "/lovable-uploads/6f06861d-83ea-4078-982e-b43f06f9461e.png", // HVAC technician
+  "/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png",
+  "/lovable-uploads/ff6ffdf7-2f2b-4eea-bb43-9dead7285c1d.png",
+  "/lovable-uploads/ea720679-b35b-49a0-b0db-ad5aa0a0d40b.png",
+  "/lovable-uploads/67d1b2fa-e641-4d49-8315-7c3e003aefa8.png",
+  "/lovable-uploads/7c7e026e-6bdd-4da5-96ee-84bac4f9ad7d.png",
+  "/lovable-uploads/bdd801d0-4496-4a53-8b0f-d769174005d6.png",
+  "/lovable-uploads/5aa877d4-6691-495d-9285-f7c493100eef.png",
+  "/lovable-uploads/2bf25f7e-4a91-4582-a46c-b1724201c781.png",
+  "/lovable-uploads/6f06861d-83ea-4078-982e-b43f06f9461e.png",
 ];
 
 interface ServiceHeroCarouselProps {
@@ -80,7 +80,7 @@ const ServiceHeroCarousel = ({
                           src={image} 
                           alt={`Service slide ${index + 1}`} 
                           className="w-full h-[350px] object-cover transition-transform duration-500 hover:scale-105"
-                          loading="lazy" // For better performance
+                          loading="lazy"
                         />
                       </div>
                     </div>

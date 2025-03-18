@@ -139,7 +139,7 @@ export const servicesList: Service[] = [
         title: 'Robotics Solutions',
         slug: 'robotics',
         short_description: 'Advanced robotics integration for various industrial applications.',
-        image: 'https://images.unsplash.com/photo-1581093458791-9f3c3900ed5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/lovable-uploads/bdd801d0-4496-4a53-8b0f-d769174005d6.png',
         content: `
           <p>Our Robotics Solutions services focus on integrating robotic systems into various industrial processes to enhance productivity, precision, and safety. We provide comprehensive robotics services from initial consultation and design to implementation and ongoing support.</p>
           
@@ -160,7 +160,7 @@ export const servicesList: Service[] = [
         title: 'Control Systems',
         slug: 'control-systems',
         short_description: 'Advanced control systems for process automation and monitoring.',
-        image: 'https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/lovable-uploads/67d1b2fa-e641-4d49-8315-7c3e003aefa8.png',
         content: `
           <p>Our Control Systems services provide sophisticated solutions for managing and monitoring various processes in industrial and commercial environments. We design and implement control systems that ensure precise operation, efficient resource utilization, and comprehensive data feedback.</p>
           
@@ -206,7 +206,7 @@ export const servicesList: Service[] = [
         title: 'Building Construction',
         slug: 'building-construction',
         short_description: 'Construction services for residential, commercial, and industrial buildings.',
-        image: '/lovable-uploads/13453392-120a-4058-a1f3-ebdf7284263d.png',
+        image: '/lovable-uploads/2bf25f7e-4a91-4582-a46c-b1724201c781.png',
         content: `
           <p>Our Building Construction services cover all aspects of constructing new buildings for various purposes, including residential, commercial, and industrial use. From laying foundations to completing finishing work, we manage the entire construction process to ensure high-quality buildings that meet all requirements and specifications.</p>
           
@@ -227,7 +227,7 @@ export const servicesList: Service[] = [
         title: 'Infrastructure Development',
         slug: 'infrastructure',
         short_description: 'Development of essential infrastructure including roads, bridges, and utilities.',
-        image: 'https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/lovable-uploads/5aa877d4-6691-495d-9285-f7c493100eef.png',
         content: `
           <p>Our Infrastructure Development services focus on creating and improving the essential systems and facilities that support communities and enable economic activity. We design and construct critical infrastructure components that form the backbone of urban and rural development.</p>
           
@@ -248,7 +248,7 @@ export const servicesList: Service[] = [
         title: 'Site Development',
         slug: 'site-development',
         short_description: 'Preparation and development of sites for construction projects.',
-        image: 'https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/lovable-uploads/5aa877d4-6691-495d-9285-f7c493100eef.png',
         content: `
           <p>Our Site Development services prepare land for construction and development through various engineering processes. We transform raw land into construction-ready sites with proper grading, drainage, utility connections, and access routes to support future development.</p>
           
@@ -361,7 +361,7 @@ export const servicesList: Service[] = [
     slug: 'environmental-osh-consultancy',
     description: 'Expert consultation on environmental impact assessment and occupational safety & health.',
     icon: <Shield className="w-6 h-6" />,
-    image: '/lovable-uploads/b9ff62ba-6e49-4a3c-ac78-24f5ea0fcb3d.png',
+    image: '/lovable-uploads/5aa877d4-6691-495d-9285-f7c493100eef.png',
     content: `
       <p>Our Environmental & Occupational Safety & Health (OSH) Consultancy services provide expert guidance on environmental management and workplace safety. We help organizations comply with regulations, implement best practices, and develop sustainable strategies that protect both the environment and worker health.</p>
       
@@ -382,7 +382,7 @@ export const servicesList: Service[] = [
         title: 'Environmental Impact Assessment',
         slug: 'environmental-assessment',
         short_description: 'Comprehensive assessment of environmental impacts for projects and activities.',
-        image: '/lovable-uploads/65f37441-4302-49ad-a7ca-beddd8f6b358.png',
+        image: '/lovable-uploads/5aa877d4-6691-495d-9285-f7c493100eef.png',
         content: `
           <p>Our Environmental Impact Assessment services evaluate the potential environmental effects of proposed projects, developments, or activities. We conduct thorough assessments that identify potential impacts, propose mitigation measures, and help clients comply with environmental regulations and standards.</p>
           
@@ -403,7 +403,7 @@ export const servicesList: Service[] = [
         title: 'Occupational Safety & Health',
         slug: 'osh',
         short_description: 'Comprehensive services to ensure workplace safety and employee health.',
-        image: 'https://images.unsplash.com/photo-1587316505021-657e965bd456?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/lovable-uploads/6f06861d-83ea-4078-982e-b43f06f9461e.png',
         content: `
           <p>Our Occupational Safety & Health services help organizations create safer workplaces and protect employee health. We provide comprehensive OSH solutions that identify hazards, assess risks, implement controls, and promote a culture of safety across all levels of an organization.</p>
           
