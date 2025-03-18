@@ -1,0 +1,212 @@
+
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Menu, X, ChevronDown, Phone } from 'lucide-react';
+import { cn } from '@/lib/utils';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const toggleDropdown = (dropdownName: string) => {
+    setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
+  };
+
+  const navLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'About Us', path: '/about' },
+    { 
+      name: 'Services', 
+      path: '/services',
+      dropdown: [
+        { name: 'Engineering Staffing', path: '/services/engineering-staffing' },
+        { name: 'Technical Training', path: '/services/technical-training' },
+        { name: 'Consulting Services', path: '/services/consulting' },
+        { name: 'Project Management', path: '/services/project-management' }
+      ]
+    },
+    { name: 'Products', path: '/products' },
+    { name: 'Apply Now', path: '/apply' },
+    { name: 'Contact', path: '/contact' },
+  ];
+
+  return (
+    <header 
+      className={cn(
+        "fixed top-0 w-full z-50 transition-all duration-300",
+        isScrolled 
+          ? "py-2 bg-white shadow-md" 
+          : "py-4 bg-transparent"
+      )}
+    >
+      <div className="container-fluid">
+        <nav className="flex items-center justify-between">
+          {/* Logo */}
+          <Link 
+            to="/" 
+            className="flex items-center"
+            onClick={() => setIsOpen(false)}
+          >
+            <span className="text-xl font-bold text-primary">Engineering</span>
+            <span className="text-xl font-bold text-secondary ml-1">Manpower</span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <div key={link.name} className="relative group">
+                {link.dropdown ? (
+                  <button 
+                    onClick={() => toggleDropdown(link.name)}
+                    className="flex items-center text-gray-700 hover:text-primary transition-colors"
+                  >
+                    {link.name}
+                    <ChevronDown size={16} className="ml-1" />
+                  </button>
+                ) : (
+                  <Link 
+                    to={link.path} 
+                    className="text-gray-700 hover:text-primary transition-colors subtle-underline"
+                  >
+                    {link.name}
+                  </Link>
+                )}
+
+                {link.dropdown && (
+                  <div 
+                    className={cn(
+                      "absolute left-0 mt-2 w-48 py-2 bg-white rounded-md shadow-lg z-10 transition-all duration-300 transform origin-top",
+                      activeDropdown === link.name 
+                        ? "opacity-100 scale-100" 
+                        : "opacity-0 scale-95 pointer-events-none"
+                    )}
+                  >
+                    {link.dropdown.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.path}
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary"
+                        onClick={() => setActiveDropdown(null)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Contact Info */}
+          <div className="hidden lg:flex items-center space-x-4">
+            <a 
+              href="tel:+250788300594" 
+              className="flex items-center text-secondary hover:text-primary transition-colors"
+            >
+              <Phone size={18} className="mr-2" />
+              <span className="font-medium">+250 788 300 594</span>
+            </a>
+            <Link 
+              to="/contact" 
+              className="btn btn-primary rounded-full px-6 py-2"
+            >
+              Contact Us
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button 
+            className="lg:hidden focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </nav>
+
+        {/* Mobile Navigation */}
+        <div 
+          className={cn(
+            "lg:hidden fixed inset-0 bg-white z-40 pt-20 px-6 transition-all duration-300 ease-in-out transform",
+            isOpen ? "translate-x-0" : "translate-x-full"
+          )}
+        >
+          <nav className="flex flex-col space-y-6">
+            {navLinks.map((link) => (
+              <div key={link.name} className="py-2 border-b border-gray-100">
+                {link.dropdown ? (
+                  <div>
+                    <button 
+                      onClick={() => toggleDropdown(link.name)}
+                      className="flex items-center justify-between w-full text-gray-700 hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                      <ChevronDown size={16} className={cn(
+                        "transition-transform duration-200",
+                        activeDropdown === link.name ? "rotate-180" : ""
+                      )} />
+                    </button>
+                    
+                    <div 
+                      className={cn(
+                        "mt-2 pl-4 space-y-2 transition-all duration-200",
+                        activeDropdown === link.name ? "block" : "hidden"
+                      )}
+                    >
+                      {link.dropdown.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.path}
+                          className="block py-2 text-gray-600 hover:text-primary"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <Link 
+                    to={link.path} 
+                    className="block text-gray-700 hover:text-primary transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                )}
+              </div>
+            ))}
+            
+            <div className="pt-6 mt-6 border-t border-gray-100">
+              <a 
+                href="tel:+250788300594" 
+                className="flex items-center text-secondary hover:text-primary transition-colors"
+              >
+                <Phone size={18} className="mr-2" />
+                <span className="font-medium">+250 788 300 594</span>
+              </a>
+              
+              <Link 
+                to="/contact" 
+                className="btn btn-primary w-full mt-4 py-3 rounded-md text-center"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact Us
+              </Link>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;
