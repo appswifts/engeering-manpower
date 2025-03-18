@@ -1,4 +1,3 @@
-
 import { Service } from './serviceData';
 import { Zap, Wrench, Building, GraduationCap, Shield } from 'lucide-react';
 import React from 'react';
@@ -10,7 +9,7 @@ export const servicesList: Service[] = [
     slug: 'electrical-installation',
     description: 'Professional electrical installation and maintenance services for all projects.',
     icon: <Zap className="w-6 h-6" />,
-    image: 'https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png',
     content: `
       <p>Our Electrical Installation and Maintenance services cover a wide range of electrical solutions for residential, commercial, and industrial clients. We ensure that all electrical systems are installed according to the highest safety standards and maintained regularly to prevent downtime and hazards.</p>
       
@@ -31,7 +30,7 @@ export const servicesList: Service[] = [
         title: 'Residential Electrical Services',
         slug: 'residential',
         short_description: 'Complete electrical solutions for homes and residential properties.',
-        image: 'https://images.unsplash.com/photo-1558211583-d26f610c1eb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/lovable-uploads/ff6ffdf7-2f2b-4eea-bb43-9dead7285c1d.png',
         content: `
           <p>Our residential electrical services ensure that your home's electrical system is safe, efficient, and up to code. From new installations to troubleshooting and repairs, our team of certified electricians provides comprehensive solutions for all your home electrical needs.</p>
           
@@ -52,7 +51,7 @@ export const servicesList: Service[] = [
         title: 'Commercial Electrical Services',
         slug: 'commercial',
         short_description: 'Comprehensive electrical solutions for businesses and commercial properties.',
-        image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/lovable-uploads/67d1b2fa-e641-4d49-8315-7c3e003aefa8.png',
         content: `
           <p>Our commercial electrical services cater to businesses of all sizes, providing reliable electrical solutions that minimize downtime and maximize efficiency. We understand the unique requirements of commercial spaces and offer customized electrical services to meet your specific needs.</p>
           
@@ -73,7 +72,7 @@ export const servicesList: Service[] = [
         title: 'Industrial Electrical Services',
         slug: 'industrial',
         short_description: 'Specialized electrical solutions for industrial facilities and manufacturing plants.',
-        image: 'https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/lovable-uploads/7c7e026e-6bdd-4da5-96ee-84bac4f9ad7d.png',
         content: `
           <p>Our industrial electrical services address the complex needs of manufacturing plants, processing facilities, and other industrial environments. We deliver robust electrical solutions that ensure operational continuity, safety, and efficiency in demanding industrial settings.</p>
           
@@ -98,7 +97,7 @@ export const servicesList: Service[] = [
     slug: 'mechatronics',
     description: 'Advanced mechatronics solutions combining mechanical, electronic, and software engineering.',
     icon: <Wrench className="w-6 h-6" />,
-    image: 'https://images.unsplash.com/photo-1565090806047-4a605a6b8fd4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/lovable-uploads/ea720679-b35b-49a0-b0db-ad5aa0a0d40b.png',
     content: `
       <p>Our Mechatronics services integrate mechanical, electronic, and software engineering to provide comprehensive solutions for automated systems. We design, implement, and maintain mechatronic systems that optimize performance, increase productivity, and reduce operational costs.</p>
       
@@ -119,7 +118,7 @@ export const servicesList: Service[] = [
         title: 'Industrial Automation',
         slug: 'industrial-automation',
         short_description: 'Automated solutions for industrial processes and manufacturing.',
-        image: 'https://images.unsplash.com/photo-1563203369-26f2e4a5ccf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/lovable-uploads/bdd801d0-4496-4a53-8b0f-d769174005d6.png',
         content: `
           <p>Our Industrial Automation services help businesses streamline their manufacturing processes through advanced automation technologies. We design and implement automation solutions that increase production efficiency, improve product quality, and reduce operational costs.</p>
           
@@ -186,7 +185,7 @@ export const servicesList: Service[] = [
     slug: 'civil-works',
     description: 'Comprehensive civil engineering and construction services for infrastructure projects.',
     icon: <Building className="w-6 h-6" />,
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/lovable-uploads/2bf25f7e-4a91-4582-a46c-b1724201c781.png',
     content: `
       <p>Our Civil Works services encompass a broad range of civil engineering and construction solutions for infrastructure development. We manage projects from initial concept and design through to construction and completion, ensuring high-quality results that meet all technical specifications and client requirements.</p>
       
@@ -207,7 +206,7 @@ export const servicesList: Service[] = [
         title: 'Building Construction',
         slug: 'building-construction',
         short_description: 'Construction services for residential, commercial, and industrial buildings.',
-        image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/lovable-uploads/13453392-120a-4058-a1f3-ebdf7284263d.png',
         content: `
           <p>Our Building Construction services cover all aspects of constructing new buildings for various purposes, including residential, commercial, and industrial use. From laying foundations to completing finishing work, we manage the entire construction process to ensure high-quality buildings that meet all requirements and specifications.</p>
           
@@ -274,7 +273,7 @@ export const servicesList: Service[] = [
     slug: 'training-internship',
     description: 'Structured training programs and internships to develop the next generation of engineers.',
     icon: <GraduationCap className="w-6 h-6" />,
-    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/lovable-uploads/6f06861d-83ea-4078-982e-b43f06f9461e.png',
     content: `
       <p>Our Training & Internship programs are designed to develop technical skills and practical knowledge in various engineering disciplines. We offer structured learning experiences that combine theoretical instruction with hands-on practice, preparing participants for successful careers in engineering and technical fields.</p>
       
@@ -362,7 +361,7 @@ export const servicesList: Service[] = [
     slug: 'environmental-osh-consultancy',
     description: 'Expert consultation on environmental impact assessment and occupational safety & health.',
     icon: <Shield className="w-6 h-6" />,
-    image: 'https://images.unsplash.com/photo-1507831488031-e2509af4be7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/lovable-uploads/b9ff62ba-6e49-4a3c-ac78-24f5ea0fcb3d.png',
     content: `
       <p>Our Environmental & Occupational Safety & Health (OSH) Consultancy services provide expert guidance on environmental management and workplace safety. We help organizations comply with regulations, implement best practices, and develop sustainable strategies that protect both the environment and worker health.</p>
       
@@ -383,7 +382,7 @@ export const servicesList: Service[] = [
         title: 'Environmental Impact Assessment',
         slug: 'environmental-assessment',
         short_description: 'Comprehensive assessment of environmental impacts for projects and activities.',
-        image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/lovable-uploads/65f37441-4302-49ad-a7ca-beddd8f6b358.png',
         content: `
           <p>Our Environmental Impact Assessment services evaluate the potential environmental effects of proposed projects, developments, or activities. We conduct thorough assessments that identify potential impacts, propose mitigation measures, and help clients comply with environmental regulations and standards.</p>
           

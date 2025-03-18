@@ -18,6 +18,25 @@ const ServiceDetailsPage = () => {
     if (!service) {
       navigate('/services');
     }
+    
+    // Preload the carousel images for better performance
+    const preloadImages = () => {
+      const carouselImages = document.querySelectorAll('.carousel-content img');
+      carouselImages.forEach(img => {
+        const src = img.getAttribute('src');
+        if (src) {
+          const newImg = new Image();
+          newImg.src = src;
+        }
+      });
+    };
+    
+    // Run preload after a short delay to ensure DOM is fully loaded
+    const timer = setTimeout(() => {
+      preloadImages();
+    }, 1000);
+    
+    return () => clearTimeout(timer);
   }, [service, navigate]);
 
   if (!service) return null;
