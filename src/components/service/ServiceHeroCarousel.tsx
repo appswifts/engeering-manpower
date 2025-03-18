@@ -70,7 +70,7 @@ const ServiceHeroCarousel = ({
           
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg blur"></div>
-            <Carousel className="w-full">
+            <Carousel className="w-full carousel-content">
               <CarouselContent>
                 {carouselImages.map((image, index) => (
                   <CarouselItem key={index}>
