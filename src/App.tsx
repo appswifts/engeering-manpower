@@ -8,6 +8,7 @@ import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
+import ServiceDetailsPage from "./pages/ServiceDetailsPage";
 import ProductsPage from "./pages/ProductsPage";
 import ContactPage from "./pages/ContactPage";
 import ApplyPage from "./pages/ApplyPage";
@@ -28,16 +29,8 @@ const App = () => (
             <Route path="/services" element={<ServicesPage />} />
             
             {/* Service detail routes */}
-            <Route path="/services/electrical-installation" element={<ServicesPage />} />
-            <Route path="/services/electrical-installation/:subtype" element={<ServicesPage />} />
-            <Route path="/services/mechatronics" element={<ServicesPage />} />
-            <Route path="/services/mechatronics/:subtype" element={<ServicesPage />} />
-            <Route path="/services/civil-works" element={<ServicesPage />} />
-            <Route path="/services/civil-works/:subtype" element={<ServicesPage />} />
-            <Route path="/services/training-internship" element={<ServicesPage />} />
-            <Route path="/services/training-internship/:subtype" element={<ServicesPage />} />
-            <Route path="/services/environmental-osh-consultancy" element={<ServicesPage />} />
-            <Route path="/services/environmental-osh-consultancy/:subtype" element={<ServicesPage />} />
+            <Route path="/services/:serviceSlug" element={<ServiceDetailsPage />} />
+            <Route path="/services/:serviceSlug/:subtype" element={<ServiceDetailsPage />} />
             
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/contact" element={<ContactPage />} />
