@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Users, Award, Briefcase, Wrench } from 'lucide-react';
@@ -19,28 +18,28 @@ const ServicesSection = () => {
       description: 'Access top engineering talent with specialized skills for your projects.',
       icon: <Users className="w-6 h-6" />,
       link: '/services/engineering-staffing',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
     },
     {
       title: 'Technical Training',
       description: 'Comprehensive training programs to develop technical expertise in your workforce.',
       icon: <Award className="w-6 h-6" />,
       link: '/services/technical-training',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     },
     {
       title: 'Consulting Services',
       description: 'Expert engineering consultation to optimize your processes and operations.',
       icon: <Briefcase className="w-6 h-6" />,
       link: '/services/consulting',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     },
     {
       title: 'Project Management',
       description: 'End-to-end management of complex engineering projects for optimal results.',
       icon: <Wrench className="w-6 h-6" />,
       link: '/services/project-management',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     },
   ];
 
