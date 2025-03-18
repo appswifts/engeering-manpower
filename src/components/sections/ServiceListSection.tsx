@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Users, Zap, Wrench, Building, GraduationCap, Shield } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import SectionTitle from '@/components/SectionTitle';
@@ -51,7 +52,7 @@ const ServiceListSection = () => {
   ];
 
   return (
-    <section className="py-20">
+    <section id="service-list" className="py-20 scroll-mt-20">
       <div className="container-fluid">
         <SectionTitle
           subtitle="Our Services"

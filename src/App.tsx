@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -26,6 +26,19 @@ const App = () => (
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
+            
+            {/* Service detail routes */}
+            <Route path="/services/electrical-installation" element={<ServicesPage />} />
+            <Route path="/services/electrical-installation/:subtype" element={<ServicesPage />} />
+            <Route path="/services/mechatronics" element={<ServicesPage />} />
+            <Route path="/services/mechatronics/:subtype" element={<ServicesPage />} />
+            <Route path="/services/civil-works" element={<ServicesPage />} />
+            <Route path="/services/civil-works/:subtype" element={<ServicesPage />} />
+            <Route path="/services/training-internship" element={<ServicesPage />} />
+            <Route path="/services/training-internship/:subtype" element={<ServicesPage />} />
+            <Route path="/services/environmental-osh-consultancy" element={<ServicesPage />} />
+            <Route path="/services/environmental-osh-consultancy/:subtype" element={<ServicesPage />} />
+            
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/apply" element={<ApplyPage />} />
