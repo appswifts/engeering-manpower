@@ -31,13 +31,23 @@ const ContactForm = () => {
     e.preventDefault();
     setLoading(true);
     
-    // Simulate form submission
+    // Create WhatsApp message
+    const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Phone:* ${formData.phone}%0A*Subject:* ${formData.subject}%0A*Message:* ${formData.message}`;
+    
+    // Simulate loading state
     setTimeout(() => {
-      toast({
-        title: "Message Sent",
-        description: "Thank you for your message. We'll respond soon!",
-      });
       setLoading(false);
+      
+      // Open WhatsApp with pre-filled message
+      window.open(`https://wa.me/250788409258?text=${whatsappMessage}`, '_blank');
+      
+      // Show success toast
+      toast({
+        title: "Form Submitted",
+        description: "You'll be redirected to WhatsApp to complete your message.",
+      });
+      
+      // Reset form
       setFormData({
         name: '',
         email: '',
@@ -45,7 +55,7 @@ const ContactForm = () => {
         subject: '',
         message: '',
       });
-    }, 1000);
+    }, 500);
   };
 
   return (
@@ -131,7 +141,7 @@ const ContactForm = () => {
       <button
         type="submit"
         disabled={loading}
-        className="w-full md:w-auto btn btn-primary btn-lg flex items-center justify-center"
+        className="w-full md:w-auto btn btn-primary btn-lg flex items-center justify-center gap-2"
       >
         {loading ? (
           <span className="flex items-center">
@@ -143,8 +153,10 @@ const ContactForm = () => {
           </span>
         ) : (
           <span className="flex items-center">
-            Send Message
-            <Send size={16} className="ml-2" />
+            Send Message via WhatsApp
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="ml-2">
+              <path d="M12 0a12 12 0 0 0-12 12 12 12 0 0 0 1.754 6.082l-1.488 4.46a.715.715 0 0 0 .172.738.717.717 0 0 0 .738.172l4.454-1.486a12.059 12.059 0 0 0 6.387 1.834 12 12 0 0 0 0-24zm5.221 17.124a3.385 3.385 0 0 1-2.34 1.091c-.621 0-1.275-.163-2.136-.5-1.108-.438-2.281-1.151-3.234-2.103-.953-.953-1.666-2.126-2.103-3.233-.339-.864-.5-1.516-.5-2.137 0-.906.364-1.736 1.091-2.339l.672-.672a.685.685 0 0 1 .969 0l1.344 1.342a.685.685 0 0 1 0 .969l-.672.671a.717.717 0 0 0-.079.89 14.693 14.693 0 0 0 2.294 2.294c.261.195.64.163.89-.079l.671-.672a.686.686 0 0 1 .969 0l1.344 1.345a.685.685 0 0 1 0 .969z"/>
+            </svg>
           </span>
         )}
       </button>

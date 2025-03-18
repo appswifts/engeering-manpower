@@ -52,18 +52,18 @@ const ContactPage = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Contact Details</h3>
               <p className="text-gray-600 mb-4">
-                Phone: +250 788 300 594<br />
-                Email: contact@engineeringmanpower.com
+                Phone: +250 788 409 258<br />
+                Email: engineeringmanpowerprovidersltd@gmail.com
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="tel:+250788300594"
+                  href="tel:+250788409258"
                   className="text-primary font-medium hover:text-primary-600 transition-colors"
                 >
                   Call Us
                 </a>
                 <a
-                  href="mailto:contact@engineeringmanpower.com"
+                  href="mailto:engineeringmanpowerprovidersltd@gmail.com"
                   className="text-primary font-medium hover:text-primary-600 transition-colors"
                 >
                   Email Us
@@ -107,20 +107,20 @@ const ContactPage = () => {
                 <div className="space-y-6">
                   <div>
                     <h4 className="font-bold text-gray-800 mb-1">Engineering Staffing</h4>
-                    <p className="text-gray-600 mb-1">staffing@engineeringmanpower.com</p>
-                    <p className="text-gray-600">+250 788 300 123</p>
+                    <p className="text-gray-600 mb-1">engineeringmanpowerprovidersltd@gmail.com</p>
+                    <p className="text-gray-600">+250 788 409 258</p>
                   </div>
                   
                   <div>
                     <h4 className="font-bold text-gray-800 mb-1">Technical Training</h4>
-                    <p className="text-gray-600 mb-1">training@engineeringmanpower.com</p>
-                    <p className="text-gray-600">+250 788 300 456</p>
+                    <p className="text-gray-600 mb-1">engineeringmanpowerprovidersltd@gmail.com</p>
+                    <p className="text-gray-600">+250 788 409 258</p>
                   </div>
                   
                   <div>
                     <h4 className="font-bold text-gray-800 mb-1">Consulting Services</h4>
-                    <p className="text-gray-600 mb-1">consulting@engineeringmanpower.com</p>
-                    <p className="text-gray-600">+250 788 300 789</p>
+                    <p className="text-gray-600 mb-1">engineeringmanpowerprovidersltd@gmail.com</p>
+                    <p className="text-gray-600">+250 788 409 258</p>
                   </div>
                 </div>
               </div>

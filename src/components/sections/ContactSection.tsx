@@ -3,6 +3,19 @@ import { PhoneCall } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ContactSection = () => {
+  // Function to handle WhatsApp redirect with form data
+  const handleWhatsAppSubmit = (e) => {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    const whatsappMessage = `*New Inquiry*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Subject:* ${subject}%0A*Message:* ${message}`;
+    window.open(`https://wa.me/250788409258?text=${whatsappMessage}`, '_blank');
+  };
+
   return (
     <section className="py-16 bg-gray-100">
       <div className="container-fluid">
@@ -26,8 +39,8 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="text-sm text-gray-500">Call us anytime</p>
-                <a href="tel:+250788300594" className="text-lg font-semibold hover:text-primary transition-colors">
-                  +250 788 300 594
+                <a href="tel:+250788409258" className="text-lg font-semibold hover:text-primary transition-colors">
+                  +250 788 409 258
                 </a>
               </div>
             </div>
@@ -42,7 +55,7 @@ const ContactSection = () => {
               Quick Inquiry
             </div>
             
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleWhatsAppSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
@@ -51,6 +64,7 @@ const ContactSection = () => {
                     id="name"
                     className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary"
                     placeholder="Your name"
+                    required
                   />
                 </div>
                 <div>
@@ -60,6 +74,7 @@ const ContactSection = () => {
                     id="email"
                     className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary"
                     placeholder="Your email"
+                    required
                   />
                 </div>
               </div>
@@ -69,6 +84,7 @@ const ContactSection = () => {
                 <select
                   id="subject"
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary"
+                  required
                 >
                   <option value="">Select a service</option>
                   <option value="Engineering Staffing">Engineering Staffing</option>
@@ -85,14 +101,18 @@ const ContactSection = () => {
                   rows={4}
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary"
                   placeholder="Your message"
+                  required
                 ></textarea>
               </div>
               
               <button
                 type="submit"
-                className="btn btn-primary w-full py-3"
+                className="btn btn-primary w-full py-3 flex items-center justify-center gap-2"
               >
-                Submit Inquiry
+                Submit Inquiry via WhatsApp
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0a12 12 0 0 0-12 12 12 12 0 0 0 1.754 6.082l-1.488 4.46a.715.715 0 0 0 .172.738.717.717 0 0 0 .738.172l4.454-1.486a12.059 12.059 0 0 0 6.387 1.834 12 12 0 0 0 0-24zm5.221 17.124a3.385 3.385 0 0 1-2.34 1.091c-.621 0-1.275-.163-2.136-.5-1.108-.438-2.281-1.151-3.234-2.103-.953-.953-1.666-2.126-2.103-3.233-.339-.864-.5-1.516-.5-2.137 0-.906.364-1.736 1.091-2.339l.672-.672a.685.685 0 0 1 .969 0l1.344 1.342a.685.685 0 0 1 0 .969l-.672.671a.717.717 0 0 0-.079.89 14.693 14.693 0 0 0 2.294 2.294c.261.195.64.163.89-.079l.671-.672a.686.686 0 0 1 .969 0l1.344 1.345a.685.685 0 0 1 0 .969z"/>
+                </svg>
               </button>
             </form>
           </div>

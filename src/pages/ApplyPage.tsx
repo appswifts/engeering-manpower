@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Upload, CheckCircle, AlertCircle } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
@@ -40,15 +39,26 @@ const ApplyPage = () => {
     e.preventDefault();
     setLoading(true);
     
-    // Simulate form submission
+    // Create WhatsApp message with form data
+    const whatsappMessage = `*New Job Application*%0A%0A*Name:* ${formData.firstName} ${formData.lastName}%0A*Email:* ${formData.email}%0A*Phone:* ${formData.phone}%0A*Position:* ${formData.position}%0A*Experience:* ${formData.experience}%0A*Education:* ${formData.education}%0A*Message:* ${formData.message}%0A*Resume:* ${fileName ? fileName + ' (will send separately)' : 'Not attached'}`;
+    
+    // Simulate loading
     setTimeout(() => {
       setLoading(false);
+      
+      // Open WhatsApp with pre-filled message
+      window.open(`https://wa.me/250788409258?text=${whatsappMessage}`, '_blank');
+      
+      // Show notification about resume
+      if (fileSelected) {
+        toast({
+          title: "Resume/CV Notice",
+          description: "Please send your resume directly through WhatsApp after sending your application message.",
+        });
+      }
+      
       setSubmitted(true);
-      toast({
-        title: "Application Submitted",
-        description: "Thank you for your application. We'll review it and contact you soon!",
-      });
-    }, 1500);
+    }, 1000);
   };
 
   return (
@@ -154,7 +164,7 @@ const ApplyPage = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Application Submitted!</h3>
                   <p className="text-gray-600 mb-6">
-                    Thank you for applying to join our engineering network. Our team will review your application and get back to you soon.
+                    Thank you for applying to join our engineering network. You'll be redirected to WhatsApp to complete your application.
                   </p>
                   <button
                     onClick={() => {
@@ -348,7 +358,7 @@ const ApplyPage = () => {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="w-full btn btn-primary py-3 flex items-center justify-center"
+                      className="w-full btn btn-primary py-3 flex items-center justify-center gap-2"
                     >
                       {loading ? (
                         <span className="flex items-center">
@@ -359,7 +369,12 @@ const ApplyPage = () => {
                           Processing...
                         </span>
                       ) : (
-                        'Submit Application'
+                        <span className="flex items-center">
+                          Submit Application via WhatsApp
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="ml-2">
+                            <path d="M12 0a12 12 0 0 0-12 12 12 12 0 0 0 1.754 6.082l-1.488 4.46a.715.715 0 0 0 .172.738.717.717 0 0 0 .738.172l4.454-1.486a12.059 12.059 0 0 0 6.387 1.834 12 12 0 0 0 0-24zm5.221 17.124a3.385 3.385 0 0 1-2.34 1.091c-.621 0-1.275-.163-2.136-.5-1.108-.438-2.281-1.151-3.234-2.103-.953-.953-1.666-2.126-2.103-3.233-.339-.864-.5-1.516-.5-2.137 0-.906.364-1.736 1.091-2.339l.672-.672a.685.685 0 0 1 .969 0l1.344 1.342a.685.685 0 0 1 0 .969l-.672.671a.717.717 0 0 0-.079.89 14.693 14.693 0 0 0 2.294 2.294c.261.195.64.163.89-.079l.671-.672a.686.686 0 0 1 .969 0l1.344 1.345a.685.685 0 0 1 0 .969z"/>
+                          </svg>
+                        </span>
                       )}
                     </button>
                   </div>
