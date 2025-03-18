@@ -1,9 +1,8 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SectionTitle from '@/components/SectionTitle';
 import ServiceCard from '@/components/ServiceCard';
-import { Users, Award, Briefcase, Tool, Settings, Compass, Globe, Shield, Wrench, Cpu } from 'lucide-react';
+import { Users, Award, Briefcase, Wrench, Settings, Compass, Globe, Shield, Cpu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const ServicesPage = () => {
@@ -38,7 +37,7 @@ const ServicesPage = () => {
     {
       title: 'Project Management',
       description: 'End-to-end management of complex engineering projects for optimal results.',
-      icon: <Tool className="w-6 h-6" />,
+      icon: <Wrench className="w-6 h-6" />,
       link: '/services/project-management',
       image: '/placeholder.svg',
     },

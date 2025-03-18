@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Users, Award, Briefcase, Tool, Hammer, Star, CheckCircle, ArrowUpRight } from 'lucide-react';
+import { ArrowRight, Users, Award, Briefcase, Wrench, Hammer, Star, CheckCircle, ArrowUpRight, PhoneCall } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
@@ -40,7 +40,7 @@ const HomePage = () => {
     {
       title: 'Project Management',
       description: 'End-to-end management of complex engineering projects for optimal results.',
-      icon: <Tool className="w-6 h-6" />,
+      icon: <Wrench className="w-6 h-6" />,
       link: '/services/project-management',
       image: '/placeholder.svg',
     },
@@ -331,7 +331,7 @@ const HomePage = () => {
               
               <div className="flex items-center mb-6">
                 <div className="bg-white rounded-full h-14 w-14 flex items-center justify-center shadow-md mr-4">
-                  <Phone className="text-primary" />
+                  <PhoneCall className="text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Call us anytime</p>
