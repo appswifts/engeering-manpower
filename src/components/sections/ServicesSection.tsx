@@ -19,28 +19,28 @@ const ServicesSection = () => {
       description: 'Access top engineering talent with specialized skills for your projects.',
       icon: <Users className="w-6 h-6" />,
       link: '/services/engineering-staffing',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     },
     {
       title: 'Technical Training',
       description: 'Comprehensive training programs to develop technical expertise in your workforce.',
       icon: <Award className="w-6 h-6" />,
       link: '/services/technical-training',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     },
     {
       title: 'Consulting Services',
       description: 'Expert engineering consultation to optimize your processes and operations.',
       icon: <Briefcase className="w-6 h-6" />,
       link: '/services/consulting',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     },
     {
       title: 'Project Management',
       description: 'End-to-end management of complex engineering projects for optimal results.',
       icon: <Wrench className="w-6 h-6" />,
       link: '/services/project-management',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     },
   ];
 

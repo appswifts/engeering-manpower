@@ -31,7 +31,7 @@ const ServiceHeroSection = () => {
           <div className="w-full md:w-1/2 lg:w-2/5">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1486718448742-163732cd1544?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                 alt="Engineering services" 
                 className="rounded-lg shadow-xl z-10 relative"
               />
