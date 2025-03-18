@@ -1,5 +1,6 @@
+
 import { useParams, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { getServiceBySlug } from '@/services/serviceData';
 import SectionTitle from '@/components/SectionTitle';
 import { ArrowLeft, Phone, CheckCircle2, ChevronRight, Share2 } from 'lucide-react';
@@ -9,11 +10,27 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselNext, 
+  CarouselPrevious 
+} from '@/components/ui/carousel';
+
+// Array of images for the carousel
+const carouselImages = [
+  "/lovable-uploads/9e345a04-5ec4-42e0-8e08-a62d86eb0feb.png", // OHS image
+  "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b", // Laptop 
+  "https://images.unsplash.com/photo-1518770660439-4636190af475", // Circuit board
+  "https://images.unsplash.com/photo-1461749280684-dccba630e2f6", // Programming
+];
 
 const ServiceDetailsPage = () => {
   const { serviceSlug, subtype } = useParams();
   const navigate = useNavigate();
   const service = getServiceBySlug(serviceSlug);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   // If service not found, redirect to services page
   useEffect(() => {
@@ -44,7 +61,7 @@ const ServiceDetailsPage = () => {
         </div>
       </div>
       
-      {/* Hero section */}
+      {/* Hero section with carousel */}
       <div className="bg-gradient-to-r from-primary-50 to-secondary-50 py-16 mb-12">
         <div className="container-fluid">
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -77,11 +94,25 @@ const ServiceDetailsPage = () => {
             
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg blur"></div>
-              <img 
-                src={subtypeContent?.image || service.image} 
-                alt={subtypeContent?.title || service.title} 
-                className="relative rounded-lg shadow-lg w-full h-[350px] object-cover"
-              />
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {carouselImages.map((image, index) => (
+                    <CarouselItem key={index}>
+                      <div className="p-1">
+                        <div className="overflow-hidden rounded-lg">
+                          <img 
+                            src={image} 
+                            alt={`Service slide ${index + 1}`} 
+                            className="w-full h-[350px] object-cover transition-transform duration-500 hover:scale-105"
+                          />
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-2" />
+                <CarouselNext className="right-2" />
+              </Carousel>
             </div>
           </div>
         </div>
