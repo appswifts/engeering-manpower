@@ -18,13 +18,13 @@ const TeamSection = () => {
       id: 1,
       name: "Remy Claude Nyandwi",
       position: "Project Manager",
-      imageSrc: "/lovable-uploads/2a1fd94e-011a-4eb5-9952-4fdb58e9c5e3.png",
+      imageSrc: "/lovable-uploads/09791434-54e7-403a-85c7-40f935762c2d.png",
     },
     {
       id: 2,
       name: "Jessica Mugwaneza",
       position: "Environmental and Sustainability Specialist",
-      imageSrc: "/lovable-uploads/09791434-54e7-403a-85c7-40f935762c2d.png",
+      imageSrc: "/lovable-uploads/a739f59b-12ac-4f7d-bf26-d381c4367b68.png",
     },
     {
       id: 3,
@@ -36,13 +36,13 @@ const TeamSection = () => {
       id: 4,
       name: "CYEMEZO Aimable",
       position: "IT Manager",
-      imageSrc: "/lovable-uploads/a739f59b-12ac-4f7d-bf26-d381c4367b68.png",
+      imageSrc: "/lovable-uploads/3adb2725-75c8-4a8d-b052-91dbfe37edfb.png",
     },
     {
       id: 5,
       name: "BATAMURIZA Laurence",
       position: "Secretary of Company and Finance Accountant Manager",
-      imageSrc: "/lovable-uploads/3adb2725-75c8-4a8d-b052-91dbfe37edfb.png",
+      imageSrc: "/lovable-uploads/2a1fd94e-011a-4eb5-9952-4fdb58e9c5e3.png",
     },
   ];
 
