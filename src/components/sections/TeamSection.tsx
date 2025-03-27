@@ -12,37 +12,31 @@ const TeamSection = () => {
     setIsVisible(true);
   }, []);
 
-  // Team member data structure - names and positions will be added later
+  // Team member data with real names and positions
   const teamMembers = [
     {
       id: 1,
-      name: "[Name Placeholder]",
-      position: "[Position Placeholder]",
+      name: "Remy Claude Nyandwi",
+      position: "Project Manager",
       imageSrc: "/lovable-uploads/67d1b2fa-e641-4d49-8315-7c3e003aefa8.png",
     },
     {
       id: 2,
-      name: "[Name Placeholder]",
-      position: "[Position Placeholder]",
+      name: "Jessica Mugwaneza",
+      position: "Environmental and Sustainability Specialist",
       imageSrc: "/lovable-uploads/5aa877d4-6691-495d-9285-f7c493100eef.png",
     },
     {
       id: 3,
-      name: "[Name Placeholder]",
-      position: "[Position Placeholder]",
+      name: "Munyemana Edouard",
+      position: "Training and Internship Manager",
       imageSrc: "/lovable-uploads/9e345a04-5ec4-42e0-8e08-a62d86eb0feb.png",
     },
     {
       id: 4,
-      name: "[Name Placeholder]",
-      position: "[Position Placeholder]",
+      name: "CYEMEZO Aimable",
+      position: "IT Manager",
       imageSrc: "/lovable-uploads/1e05c867-79ad-4163-b0df-35c25dd53a6d.png",
-    },
-    {
-      id: 5,
-      name: "[Name Placeholder]",
-      position: "[Position Placeholder]",
-      imageSrc: "/lovable-uploads/4d6bf7ed-8cda-4b9e-a4f2-2a19eb59f45d.jpg",
     },
   ];
 
@@ -56,7 +50,7 @@ const TeamSection = () => {
           icon={<Users className="text-primary" size={24} />}
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {teamMembers.map((member, index) => (
             <div 
               key={member.id}
