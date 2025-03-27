@@ -11,6 +11,7 @@ interface SectionTitleProps {
   subtitleClassName?: string;
   titleClassName?: string;
   descriptionClassName?: string;
+  icon?: ReactNode;
 }
 
 const SectionTitle = ({
@@ -22,6 +23,7 @@ const SectionTitle = ({
   subtitleClassName,
   titleClassName,
   descriptionClassName,
+  icon,
 }: SectionTitleProps) => {
   return (
     <div 
@@ -33,14 +35,17 @@ const SectionTitle = ({
       )}
     >
       {subtitle && (
-        <span 
-          className={cn(
-            'inline-block px-3 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-full mb-4',
-            subtitleClassName
-          )}
-        >
-          {subtitle}
-        </span>
+        <div className="flex items-center justify-center mb-4">
+          <span 
+            className={cn(
+              'inline-flex items-center px-3 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-full',
+              subtitleClassName
+            )}
+          >
+            {icon && <span className="mr-1.5">{icon}</span>}
+            {subtitle}
+          </span>
+        </div>
       )}
       <h2 
         className={cn(

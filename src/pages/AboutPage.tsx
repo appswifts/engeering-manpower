@@ -1,9 +1,9 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Users, Award, Briefcase, Clock, Globe, Shield, Target, ArrowRight } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
 import FeatureCard from '@/components/FeatureCard';
+import TeamSection from '@/components/sections/TeamSection';
 import { cn } from '@/lib/utils';
 
 const AboutPage = () => {
@@ -197,6 +197,9 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Team Section */}
+      <TeamSection />
 
       {/* Specialties Section */}
       <section className="py-20">

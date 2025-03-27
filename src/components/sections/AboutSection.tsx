@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { CheckCircle, Hammer } from 'lucide-react';
+import { CheckCircle, Hammer, Users } from 'lucide-react';
 
 const AboutSection = () => {
   return (
@@ -35,9 +35,15 @@ const AboutSection = () => {
               </li>
             </ul>
             
-            <Link to="/about" className="btn btn-primary px-8 py-3">
-              More About Us
-            </Link>
+            <div className="flex flex-wrap gap-4">
+              <Link to="/about" className="btn btn-primary px-8 py-3">
+                More About Us
+              </Link>
+              <Link to="/about" className="btn bg-secondary/10 text-secondary px-8 py-3 flex items-center">
+                <Users className="mr-2" size={18} />
+                Meet Our Team
+              </Link>
+            </div>
           </div>
           
           <div className="order-1 lg:order-2 relative">
