@@ -38,6 +38,12 @@ const TeamSection = () => {
       position: "IT Manager",
       imageSrc: "/lovable-uploads/1e05c867-79ad-4163-b0df-35c25dd53a6d.png",
     },
+    {
+      id: 5,
+      name: "BATAMURIZA Laurence",
+      position: "Secretary of Company and Finance Accountant Manager",
+      imageSrc: "/lovable-uploads/4d6bf7ed-8cda-4b9e-a4f2-2a19eb59f45d.jpg",
+    },
   ];
 
   return (
@@ -50,7 +56,7 @@ const TeamSection = () => {
           icon={<Users className="text-primary" size={24} />}
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mt-12">
           {teamMembers.map((member, index) => (
             <div 
               key={member.id}
