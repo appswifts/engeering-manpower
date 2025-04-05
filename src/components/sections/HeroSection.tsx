@@ -61,7 +61,7 @@ const HeroSection = () => {
               Engineering Manpower Provider
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Where Quality <span className="text-primary">Engineering</span> Talent Has a Name
+            <span className="text-primary">Engineering</span> Clean Energy for a Greener <span className="text-primary">Tomorrow</span>
             </h1>
             <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl">
               We offer a wide range of services including engineering staffing, technical training, consulting, and project management to help your business achieve excellence.

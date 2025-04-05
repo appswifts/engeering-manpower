@@ -21,7 +21,7 @@ const AboutPage = () => {
     },
     {
       title: "Focus on highest quality products & services",
-      description: "We're committed to excellence in every aspect of our engineering services.",
+      description: "We’re committed to excellence, environmental sustainability, and safety in every aspect of our engineering services.",
       icon: <Target size={32} className="text-primary" />,
     },
     {
