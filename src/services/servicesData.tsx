@@ -191,13 +191,8 @@ export const servicesList: Service[] = [
       <p>With our experienced team of civil engineers, project managers, and construction professionals, we deliver infrastructure projects that are built to last. We prioritize sustainability, efficiency, and safety in all our civil works projects, whether they are small-scale developments or large infrastructure undertakings.</p>
     `,
     offerings: [
-      'Infrastructure development',
-      'Building construction',
-      'Road and highway construction',
+      'Renovation services',
       'Water supply and sewerage systems',
-      'Foundation engineering',
-      'Structural engineering',
-      'Site development and preparation',
       'Construction project management'
     ],
     subtypes: [

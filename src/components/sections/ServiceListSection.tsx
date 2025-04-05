@@ -19,7 +19,7 @@ const ServiceListSection = () => {
       description: 'Professional electrical installation and maintenance services for all projects.',
       icon: <Zap className="w-6 h-6" />,
       link: '/services/electrical-installation',
-      image: '/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png',
+      image: '/lovable-uploads/Electrical Installation and Industrial Maintenance.jpg',
     },
     {
       title: 'Mechatronics and General Mechanics',
@@ -33,7 +33,7 @@ const ServiceListSection = () => {
       description: 'Comprehensive civil engineering and construction services for infrastructure projects.',
       icon: <Building className="w-6 h-6" />,
       link: '/services/civil-works',
-      image: '/lovable-uploads/2bf25f7e-4a91-4582-a46c-b1724201c781.png',
+      image: '/lovable-uploads/civil works.jpg',
     },
     {
       title: 'Refreshment of Technical Skills and Internship',
@@ -47,7 +47,7 @@ const ServiceListSection = () => {
       description: 'Expert consultation on environmental impact assessment and occupational safety & health.',
       icon: <Shield className="w-6 h-6" />,
       link: '/services/environmental-osh-consultancy',
-      image: '/lovable-uploads/5aa877d4-6691-495d-9285-f7c493100eef.png',
+      image: '/lovable-uploads/5aa877d4-6691-495d-9285-f7c493100eef.png'
     },
   ];
 
