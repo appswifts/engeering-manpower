@@ -51,7 +51,7 @@ const AboutSection = () => {
               <img 
                 alt="Engineering team" 
                 className="object-cover w-full h-full" 
-                src="/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png" 
+                src="/lovable-uploads/about1.jpg" 
               />
             </div>
             
@@ -61,7 +61,7 @@ const AboutSection = () => {
                 <span className="font-bold">Years of Experience</span>
               </div>
               <div className="text-3xl font-bold text-primary flex items-baseline">
-                29<span className="text-2xl ml-1">+</span>
+                3<span className="text-2xl ml-1">+</span>
               </div>
             </div>
           </div>

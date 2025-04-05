@@ -15,14 +15,14 @@ const ServiceListSection = () => {
 
   const services = [
     {
-      title: 'Electrical Installation and Maintenance',
+      title: 'Electrical Installation and Industrial Maintenance',
       description: 'Professional electrical installation and maintenance services for all projects.',
       icon: <Zap className="w-6 h-6" />,
       link: '/services/electrical-installation',
       image: '/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png',
     },
     {
-      title: 'Mechatronics',
+      title: 'Mechatronics and General Mechanics',
       description: 'Advanced mechatronics solutions combining mechanical, electronic, and software engineering.',
       icon: <Wrench className="w-6 h-6" />,
       link: '/services/mechatronics',
@@ -36,7 +36,7 @@ const ServiceListSection = () => {
       image: '/lovable-uploads/2bf25f7e-4a91-4582-a46c-b1724201c781.png',
     },
     {
-      title: 'Training & Internship',
+      title: 'Refreshment of Technical Skills and Internship',
       description: 'Structured training programs and internships to develop the next generation of engineers.',
       icon: <GraduationCap className="w-6 h-6" />,
       link: '/services/training-internship',
@@ -59,7 +59,7 @@ const ServiceListSection = () => {
           title="We Deliver Engineering Excellence with Precision and Care"
           description="Our comprehensive range of services is designed to meet the diverse needs of industries ranging from construction to manufacturing, energy to technology."
         />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {services.map((service, index) => (
             <ServiceCard

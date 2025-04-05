@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone, Zap, Wrench, Building, GraduationCap, Shield } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,12 +38,12 @@ const Navbar = () => {
       path: '/services',
       dropdown: [
         {
-          name: 'Electrical Installation',
+          name: 'Electrical Installation and Industrial Maintenance',
           path: '/services/electrical-installation',
           icon: <Zap size={16} className="mr-2" />
         },
         {
-          name: 'Mechatronics',
+          name: 'Mechatronics and General Mechanics',
           path: '/services/mechatronics',
           icon: <Wrench size={16} className="mr-2" />
         },
@@ -52,7 +53,7 @@ const Navbar = () => {
           icon: <Building size={16} className="mr-2" />
         },
         {
-          name: 'Training & Internship',
+          name: 'Refreshment of Technical Skills and Internship',
           path: '/services/training-internship',
           icon: <GraduationCap size={16} className="mr-2" />
         },
@@ -63,7 +64,6 @@ const Navbar = () => {
         }
       ]
     },
-    { name: 'Products', path: '/products' },
     { name: 'Apply Now', path: '/apply' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -80,14 +80,9 @@ const Navbar = () => {
       <div className="container-fluid">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link
-            to="/"
-            className="flex items-center"
-            onClick={() => setIsOpen(false)}
-          >
-            <span className="text-xl font-bold text-primary">Engineering</span>
-            <span className="text-xl font-bold text-secondary ml-1">Manpower</span>
-          </Link>
+          <div onClick={() => setIsOpen(false)}>
+            <Logo />
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">

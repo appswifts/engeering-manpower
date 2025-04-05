@@ -33,8 +33,7 @@ const ContactPage = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Our Location</h3>
               <p className="text-gray-600 mb-4">
-                123 Engineering Boulevard<br />
-                Kigali, Rwanda
+              Industry Zone Gahanga,Kicukiro, Kigali
               </p>
               <a
                 href="https://maps.google.com"
@@ -53,7 +52,7 @@ const ContactPage = () => {
               <h3 className="text-xl font-bold mb-2">Contact Details</h3>
               <p className="text-gray-600 mb-4">
                 Phone: +250 788 409 258<br />
-                Email: engineeringmanpowerprovidersltd@gmail.com
+                Email: info@engineeringmanpowerprovidersltd.com
               </p>
               <div className="flex space-x-4">
                 <a
@@ -63,7 +62,7 @@ const ContactPage = () => {
                   Call Us
                 </a>
                 <a
-                  href="mailto:engineeringmanpowerprovidersltd@gmail.com"
+                  href="mailto:info@engineeringmanpowerprovidersltd.com"
                   className="text-primary font-medium hover:text-primary-600 transition-colors"
                 >
                   Email Us
@@ -107,19 +106,19 @@ const ContactPage = () => {
                 <div className="space-y-6">
                   <div>
                     <h4 className="font-bold text-gray-800 mb-1">Engineering Staffing</h4>
-                    <p className="text-gray-600 mb-1">engineeringmanpowerprovidersltd@gmail.com</p>
+                    <p className="text-gray-600 mb-1">info@engineeringmanpowerprovidersltd.com</p>
                     <p className="text-gray-600">+250 788 409 258</p>
                   </div>
                   
                   <div>
                     <h4 className="font-bold text-gray-800 mb-1">Technical Training</h4>
-                    <p className="text-gray-600 mb-1">engineeringmanpowerprovidersltd@gmail.com</p>
+                    <p className="text-gray-600 mb-1">info@engineeringmanpowerprovidersltd.com</p>
                     <p className="text-gray-600">+250 788 409 258</p>
                   </div>
                   
                   <div>
                     <h4 className="font-bold text-gray-800 mb-1">Consulting Services</h4>
-                    <p className="text-gray-600 mb-1">engineeringmanpowerprovidersltd@gmail.com</p>
+                    <p className="text-gray-600 mb-1">info@engineeringmanpowerprovidersltd.com</p>
                     <p className="text-gray-600">+250 788 409 258</p>
                   </div>
                 </div>

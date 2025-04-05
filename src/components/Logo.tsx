@@ -9,7 +9,7 @@ const Logo = ({ className = '', variant = 'dark' }: LogoProps) => {
   return (
     <Link to="/" className={`inline-block ${className}`}>
       <img
-        src="/emp-logo.svg"
+        src="/emp-logo1.svg"
         alt="EMP Engineering Manpower Providers"
         className={`h-12 w-auto ${variant === 'light' ? 'brightness-0 invert' : ''} transition-all duration-300 hover:opacity-90`}
       />

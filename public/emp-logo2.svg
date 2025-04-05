@@ -6,26 +6,26 @@
     <path d="M55,30 H100 V50 H65 V70 H95 V90 H65 V110 H100 V130 H55 Z" />
     <path d="M105,30 H150 V50 H115 V130 H105 Z" />
   </g>
-
+  
   <!-- Horizontal Line -->
   <line x1="150" y1="140" x2="500" y2="140" stroke="#1F4E6F" stroke-width="3" />
-
+  
   <!-- Heart/People Icon -->
   <g>
     <!-- Outer Heart Shape -->
     <path d="M210,120 Q180,90 210,60 Q240,90 210,120 Z" fill="#E78C23" />
-
+    
     <!-- People Silhouettes -->
     <circle cx="195" cy="70" r="8" fill="#E78C23" />
     <circle cx="225" cy="70" r="8" fill="#E78C23" />
-
+    
     <!-- Stylized People -->
     <path d="M195,80 Q210,100 225,80" stroke="#FFFFFF" stroke-width="3" fill="none" />
   </g>
-
+  
   <!-- ENGINEERING Text -->
   <text x="250" y="80" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1F4E6F">ENGINEERING</text>
-
+  
   <!-- MANPOWER PROVIDERS Text -->
   <text x="250" y="110" font-family="Arial, sans-serif" font-size="18" fill="#1F4E6F">MANPOWER PROVIDERS</text>
 </svg>

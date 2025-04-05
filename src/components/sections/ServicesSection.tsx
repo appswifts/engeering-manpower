@@ -5,12 +5,12 @@ import { Zap, Wrench, Building, GraduationCap, Shield } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import SectionTitle from '@/components/SectionTitle';
 import ServiceCard from '@/components/ServiceCard';
-import { 
-  Carousel, 
-  CarouselContent, 
-  CarouselItem, 
-  CarouselNext, 
-  CarouselPrevious 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
 } from '@/components/ui/carousel';
 
 const ServicesSection = () => {
@@ -22,14 +22,14 @@ const ServicesSection = () => {
 
   const services = [
     {
-      title: 'Electrical Installation and Maintenance',
+      title: 'Electrical Installation and Industrial Maintenance',
       description: 'Professional electrical installation and maintenance services for all projects.',
       icon: <Zap className="w-6 h-6" />,
       link: '/services/electrical-installation',
       image: '/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png',
     },
     {
-      title: 'Mechatronics',
+      title: 'Mechatronics and General Mechanics',
       description: 'Advanced mechatronics solutions combining mechanical, electronic, and software engineering.',
       icon: <Wrench className="w-6 h-6" />,
       link: '/services/mechatronics',
@@ -43,7 +43,7 @@ const ServicesSection = () => {
       image: '/lovable-uploads/2bf25f7e-4a91-4582-a46c-b1724201c781.png',
     },
     {
-      title: 'Training & Internship',
+      title: 'Refreshment of Technical Skills and Internship',
       description: 'Structured training programs and internships to develop the next generation of engineers.',
       icon: <GraduationCap className="w-6 h-6" />,
       link: '/services/training-internship',
@@ -66,7 +66,7 @@ const ServicesSection = () => {
           title="What We Do"
           description="Our top priority is customer satisfaction, and we work closely with clients to understand their unique needs and goals."
         />
-        
+
         <div className="relative mt-12">
           <Carousel
             opts={{
@@ -98,7 +98,7 @@ const ServicesSection = () => {
             </div>
           </Carousel>
         </div>
-        
+
         <div className="text-center mt-12">
           <Link
             to="/services"
