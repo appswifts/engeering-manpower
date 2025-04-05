@@ -8,7 +8,7 @@ export const servicesList: Service[] = [
     slug: 'electrical-installation',
     description: 'Professional electrical installation and maintenance services for all projects.',
     icon: <Zap className="w-6 h-6" />,
-    image: '/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png',
+    image: '/lovable-uploads/Electrical Installation and Industrial Maintenance.jpg',
     content: `
       <p>Our Electrical Installation and Industrial Maintenance services cover a wide range of electrical solutions for residential, commercial, and industrial clients. We ensure that all electrical systems are installed according to the highest safety standards and maintained regularly to prevent downtime and hazards.</p>
 

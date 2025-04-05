@@ -21,7 +21,7 @@ const ServiceHeroCarousel = ({
 }: ServiceHeroCarouselProps) => {
   // Map service slugs to their featured images
   const serviceImages = {
-    'electrical-installation': '/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png',
+    'electrical-installation': '/lovable-uploads/Electrical Installation and Industrial Maintenance.jpg',
     'mechatronics': '/lovable-uploads/ea720679-b35b-49a0-b0db-ad5aa0a0d40b.png',
     'civil-works': '/lovable-uploads/civil works.jpg',
     'training-internship': '/lovable-uploads/6f06861d-83ea-4078-982e-b43f06f9461e.png',
