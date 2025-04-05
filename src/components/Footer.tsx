@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="space-y-6">
             <Logo variant="dark" className="mb-4" />
             <p className="text-gray-300 max-w-xs">
-              Providing high-quality engineering talent and technical solutions since 1995.
+              Providing high-quality engineering talent and technical solutions since 2022.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="bg-gray-800 hover:bg-primary transition-colors p-2.5 rounded-full">
@@ -109,7 +109,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-3 mt-1 text-primary" />
-                <span className="text-gray-300">123 Engineering Boulevard, Kigali, Rwanda</span>
+                <span className="text-gray-300">Industry Zone Gahanga,Kicukiro, Kigali</span>
               </li>
             </ul>
             <Link

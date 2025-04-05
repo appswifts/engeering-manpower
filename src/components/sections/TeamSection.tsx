@@ -16,9 +16,21 @@ const TeamSection = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Remy Claude Nyandwi",
+      name: "Jean UGWANEZA",
+      position: "CEO and Founder ",
+      imageSrc: "/lovable-uploads/09791434-54e7-403a-85c7-40f935762c2d1.jpg",
+    },
+    {
+      id: 1,
+      name: "Eng. Remy Claude Nyandwi",
       position: "Project Manager",
       imageSrc: "/lovable-uploads/09791434-54e7-403a-85c7-40f935762c2d.png",
+    },
+    {
+      id: 5,
+      name: "BATAMURIZA Laurence",
+      position: "Secretary of Company and Finance Accountant Manager",
+      imageSrc: "/lovable-uploads/2a1fd94e-011a-4eb5-9952-4fdb58e9c5e3.png",
     },
     {
       id: 2,
@@ -28,22 +40,27 @@ const TeamSection = () => {
     },
     {
       id: 3,
-      name: "Munyemana Edouard",
-      position: "Training and Internship Manager",
+      name: "NZAMWITA Flavien",
+      position: "Occupational Safety and Health consultant",
       imageSrc: "/lovable-uploads/c9972734-76f4-4948-9d3e-6e803434dc18.png",
     },
+
+
+    {
+      id: 3,
+      name: "Munyemana Edouard",
+      position: "Training and Internship Manager",
+      imageSrc: "/lovable-uploads/c9972734-76f4-4948-9d3e-6e803434dc182.jpg",
+    },
+
     {
       id: 4,
       name: "CYEMEZO Aimable",
       position: "IT Manager",
       imageSrc: "/lovable-uploads/3adb2725-75c8-4a8d-b052-91dbfe37edfb.png",
     },
-    {
-      id: 5,
-      name: "BATAMURIZA Laurence",
-      position: "Secretary of Company and Finance Accountant Manager",
-      imageSrc: "/lovable-uploads/2a1fd94e-011a-4eb5-9952-4fdb58e9c5e3.png",
-    },
+
+
   ];
 
   return (
@@ -55,10 +72,10 @@ const TeamSection = () => {
           description="Our leadership team brings decades of experience and expertise to deliver excellence in engineering services."
           icon={<Users className="text-primary" size={24} />}
         />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mt-12">
           {teamMembers.map((member, index) => (
-            <div 
+            <div
               key={member.id}
               className={cn(
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",

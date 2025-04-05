@@ -14,21 +14,21 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       content: "Engineering Manpower Provider has been an invaluable partner in providing skilled engineering talent for our construction projects. Their team consistently delivers high-quality professionals who understand our specific needs.",
-      author: "Robert Johnson",
-      position: "Project Director",
-      company: "Construction Excellence Ltd",
+      author: "Andrew Sebera",
+      position: "Enterpreneur",
+      company: "Construction Company",
     },
     {
       content: "Their technical training programs have significantly improved our team's capabilities. The customized curriculum and hands-on approach make a real difference in skill development.",
-      author: "Sarah Williams",
-      position: "HR Manager",
-      company: "Global Engineering Solutions",
+      author: "Gustave Bahati",
+      position: "logistic manager",
+      company: "HCR DRC / GOMA",
     },
     {
       content: "The consulting services provided by Engineering Manpower have transformed our operational efficiency. Their insights and recommendations were practical and delivered measurable results.",
-      author: "Michael Chen",
-      position: "Operations Manager",
-      company: "Tech Innovations Inc",
+      author: "Patient Nyamwasa",
+      position: "Security Officer",
+      company: "Skol brewering LTD",
     },
   ];
 

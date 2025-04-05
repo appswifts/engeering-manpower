@@ -35,7 +35,7 @@ const AboutPage = () => {
       icon: <Briefcase size={32} className="text-primary" />,
     },
     {
-      title: "29+ years of technical experience",
+      title: "3+ years of technical experience",
       description: "Our long history has equipped us with unparalleled expertise in the field.",
       icon: <Clock size={32} className="text-primary" />,
     },
@@ -47,7 +47,7 @@ const AboutPage = () => {
   ];
 
   const milestones = [
-    { year: 2022, title: "Company founded", description: "Established with a mission to provide premium engineering talent." },
+    { year: 1995, title: "Company founded", description: "Established with a mission to provide premium engineering talent." },
     { year: 2000, title: "Expanded services", description: "Added technical training to our service offerings." },
     { year: 2005, title: "International partnerships", description: "Formed strategic alliances with global engineering firms." },
     { year: 2010, title: "Training center launch", description: "Opened state-of-the-art technical training facility." },
@@ -86,9 +86,13 @@ const AboutPage = () => {
             )}>
               <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
               <p className="text-gray-600 mb-6">
-                To provide exceptional engineering talent and services that empower organizations to achieve operational excellence and innovation. We are committed to delivering the highest standard of quality and expertise in every engagement.
+              We provide exceptional engineering talent and services that empower organizations to achieve operational excellence, innovation, and sustainability. Our commitment extends beyond technical expertise—we prioritize environmental responsibility and uphold the highest standards of occupational safety and health in every engagement.
               </p>
               <ul className="space-y-3">
+              <li className="flex items-start">
+                  <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={18} />
+                  <span>Drive environmental sustainability through responsible engineering practices</span>
+                </li>
                 <li className="flex items-start">
                   <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={18} />
                   <span>Deliver top engineering talent for diverse industry needs</span>
@@ -101,6 +105,11 @@ const AboutPage = () => {
                   <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={18} />
                   <span>Offer consulting that drives measurable improvements</span>
                 </li>
+                
+                <li className="flex items-start">
+                  <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={18} />
+                  <span>Integrate safety and health standards into every project</span>
+                </li>
               </ul>
             </div>
             
@@ -111,9 +120,13 @@ const AboutPage = () => {
             )}>
               <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
               <p className="text-gray-600 mb-6">
-                To be the premier provider of engineering talent and solutions, recognized globally for our commitment to excellence, innovation, and sustainable practices. We aim to transform how organizations access and utilize engineering expertise.
+              To be a globally recognized leader in engineering talent and solutions—known for advancing operational excellence, driving innovation, and championing sustainable practices. We envision transforming how organizations access engineering expertise, while upholding the highest standards of environmental stewardship and occupational safety.
               </p>
               <ul className="space-y-3">
+              <li className="flex items-start">
+                  <CheckCircle className="text-secondary mr-3 mt-1 flex-shrink-0" size={18} />
+                  <span>Lead in promoting environmentally sustainable engineering practices</span>
+                </li>
                 <li className="flex items-start">
                   <CheckCircle className="text-secondary mr-3 mt-1 flex-shrink-0" size={18} />
                   <span>Be the first choice for engineering talent acquisition</span>
@@ -126,6 +139,12 @@ const AboutPage = () => {
                   <CheckCircle className="text-secondary mr-3 mt-1 flex-shrink-0" size={18} />
                   <span>Pioneer innovative engineering solutions and approaches</span>
                 </li>
+                
+                <li className="flex items-start">
+                  <CheckCircle className="text-secondary mr-3 mt-1 flex-shrink-0" size={18} />
+                  <span>Champion occupational safety and health across all operations</span>
+                </li>
+
               </ul>
             </div>
           </div>
@@ -150,7 +169,7 @@ const AboutPage = () => {
                     </div>
                     <div>
                       <p className="text-gray-600 text-sm">Happy Clients</p>
-                      <p className="text-2xl font-bold">400<span className="text-primary">+</span></p>
+                      <p className="text-2xl font-bold">180<span className="text-primary">+</span></p>
                     </div>
                   </div>
                 </div>
@@ -163,28 +182,28 @@ const AboutPage = () => {
               </span>
               
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                We pride ourselves on our expertise and quality
+              We pride ourselves on expert engineering, quality, sustainability, and safety.
               </h2>
               
               <p className="text-gray-600 mb-6">
-                Since 2022, Engineering Manpower Provider has established a premier reputation for excellence in providing engineering talent and technical services. Our dedication to quality and precision has made us a trusted partner for organizations seeking top-tier engineering expertise.
+              Since its inception, Engineering Manpower Provider has built a premier reputation for excellence in delivering engineering talent and technical services. Our commitment to quality and precision has made us a trusted partner for organizations seeking top-tier engineering expertise.
               </p>
               
               <p className="text-gray-600 mb-8">
-                We maintain strong partnerships with world-class manufacturers and agencies, ensuring we provide cutting-edge expertise, unparalleled efficiency, and quality service. Over 75% of our resources are dedicated to technical support and after-sales service, with teams of highly qualified engineers and specialized technicians ready to meet your needs.
+              We maintain strong partnerships with world-class manufacturers and agencies, ensuring access to cutting-edge expertise, unmatched efficiency, and quality service. More than 75% of our resources are dedicated to technical support and after-sales service, with teams of highly qualified engineers and specialized technicians ready to meet your needs.
               </p>
               
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="flex items-center space-x-2">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-primary font-bold">29+</span>
+                    <span className="text-primary font-bold">3+</span>
                   </div>
                   <span className="font-medium">Years of Experience</span>
                 </div>
                 
                 <div className="flex items-center space-x-2">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-primary font-bold">400+</span>
+                    <span className="text-primary font-bold">180+</span>
                   </div>
                   <span className="font-medium">Happy Clients</span>
                 </div>
@@ -234,7 +253,7 @@ const AboutPage = () => {
           <SectionTitle
             subtitle="Our Journey"
             title="Our History"
-            description="Since 2, we've been on a mission to provide exceptional engineering talent and services."
+            description="Since 2022, we've been on a mission to provide exceptional engineering talent and services."
           />
           
           <div className="relative mt-16 max-w-4xl mx-auto">

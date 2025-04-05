@@ -35,7 +35,7 @@ const ServiceHeroSection = () => {
             <div className="relative">
               <img alt="Engineering services" className="rounded-lg shadow-xl z-10 relative" src="/lovable-uploads/4d6bf7ed-8cda-4b9e-a4f2-2a19eb59f45d.jpg" />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
-                29+ Years
+                3+ Years
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ const CTASection = () => {
             Ready to Elevate Your Engineering Capabilities?
           </h2>
           <p className="text-white/90 text-lg mb-8">
-            Partner with EMP Engineering Manpower Providers for access to top talent, expert training, and comprehensive solutions.
+            Partner with Engineering Manpower Provider for access to top talent, expert training, and comprehensive solutions.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

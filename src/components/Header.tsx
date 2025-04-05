@@ -26,11 +26,11 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg py-4' : 'bg-white/90 backdrop-blur-sm py-6'}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg py-4' : 'bg-transparent py-6'}`}
     >
       <div className="container-fluid">
         <nav className="flex items-center justify-between">
-          <Logo variant="dark" />
+          <Logo variant={isScrolled ? 'dark' : 'light'} />
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
@@ -38,7 +38,7 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`font-medium transition-colors text-gray-700 hover:text-primary`}
+                className={`font-medium transition-colors ${isScrolled ? 'text-gray-700 hover:text-primary' : 'text-white hover:text-primary'}`}
               >
                 {item.label}
               </Link>
@@ -57,9 +57,9 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className="text-gray-900" size={24} />
+              <X className={isScrolled ? 'text-gray-900' : 'text-white'} size={24} />
             ) : (
-              <Menu className="text-gray-900" size={24} />
+              <Menu className={isScrolled ? 'text-gray-900' : 'text-white'} size={24} />
             )}
           </button>
         </nav>
@@ -72,7 +72,7 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="font-medium transition-colors text-gray-700 hover:text-primary"
+                  className={`font-medium transition-colors ${isScrolled ? 'text-gray-700 hover:text-primary' : 'text-white hover:text-primary'}`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}

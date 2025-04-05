@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone, Zap, Wrench, Building, GraduationCap, Shield } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import Logo from './Logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,15 +74,20 @@ const Navbar = () => {
         "fixed top-0 w-full z-50 transition-all duration-300",
         isScrolled
           ? "py-2 bg-white shadow-md"
-          : "py-4 bg-white/90 backdrop-blur-sm"
+          : "py-4 bg-transparent"
       )}
     >
       <div className="container-fluid">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <div onClick={() => setIsOpen(false)}>
-            <Logo variant="dark" />
-          </div>
+          <Link
+            to="/"
+            className="flex items-center"
+            onClick={() => setIsOpen(false)}
+          >
+            <span className="text-xl font-bold text-primary">Engineering</span>
+            <span className="text-xl font-bold text-secondary ml-1">Manpower</span>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
