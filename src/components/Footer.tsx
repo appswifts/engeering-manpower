@@ -104,7 +104,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-3 mt-1 text-primary" />
-                <span className="text-gray-300">Industry Zone Gahanga,Kicukiro, Kigali   </span>
+                <span className="text-gray-300">Industrial Zone Gahanga,Kicukiro, Kigali   </span>
               </li>
             </ul>
             <Link
