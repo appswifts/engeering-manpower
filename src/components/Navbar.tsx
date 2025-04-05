@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone, Zap, Wrench, Building, GraduationCap, Shield } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,32 +33,32 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-    { 
-      name: 'Services', 
+    {
+      name: 'Services',
       path: '/services',
       dropdown: [
-        { 
-          name: 'Electrical Installation', 
+        {
+          name: 'Electrical Installation',
           path: '/services/electrical-installation',
           icon: <Zap size={16} className="mr-2" />
         },
-        { 
-          name: 'Mechatronics', 
+        {
+          name: 'Mechatronics',
           path: '/services/mechatronics',
           icon: <Wrench size={16} className="mr-2" />
         },
-        { 
-          name: 'Civil Works', 
+        {
+          name: 'Civil Works',
           path: '/services/civil-works',
           icon: <Building size={16} className="mr-2" />
         },
-        { 
-          name: 'Training & Internship', 
+        {
+          name: 'Training & Internship',
           path: '/services/training-internship',
           icon: <GraduationCap size={16} className="mr-2" />
         },
-        { 
-          name: 'Environmental & OSH Consultancy', 
+        {
+          name: 'Environmental & OSH Consultancy',
           path: '/services/environmental-osh-consultancy',
           icon: <Shield size={16} className="mr-2" />
         }
@@ -69,37 +70,32 @@ const Navbar = () => {
   ];
 
   return (
-    <header 
+    <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        isScrolled 
-          ? "py-2 bg-white shadow-md" 
-          : "py-4 bg-transparent"
+        isScrolled
+          ? "py-2 bg-white shadow-md"
+          : "py-4 bg-white/90 backdrop-blur-sm"
       )}
     >
       <div className="container-fluid">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link 
-            to="/" 
-            className="flex items-center"
-            onClick={() => setIsOpen(false)}
-          >
-            <span className="text-xl font-bold text-primary">Engineering</span>
-            <span className="text-xl font-bold text-secondary ml-1">Manpower</span>
-          </Link>
+          <div onClick={() => setIsOpen(false)}>
+            <Logo variant="dark" />
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               <div key={link.name} className="relative group">
                 {link.dropdown ? (
-                  <button 
+                  <button
                     onClick={() => toggleDropdown(link.name)}
                     className={cn(
                       "flex items-center transition-colors",
                       location.pathname === link.path || location.pathname.startsWith(link.path + '/')
-                        ? "text-primary" 
+                        ? "text-primary"
                         : "text-gray-700 hover:text-primary"
                     )}
                   >
@@ -110,12 +106,12 @@ const Navbar = () => {
                     )} />
                   </button>
                 ) : (
-                  <Link 
-                    to={link.path} 
+                  <Link
+                    to={link.path}
                     className={cn(
                       "transition-colors subtle-underline",
                       location.pathname === link.path
-                        ? "text-primary" 
+                        ? "text-primary"
                         : "text-gray-700 hover:text-primary"
                     )}
                   >
@@ -124,11 +120,11 @@ const Navbar = () => {
                 )}
 
                 {link.dropdown && (
-                  <div 
+                  <div
                     className={cn(
                       "absolute left-0 mt-2 w-64 py-2 bg-white rounded-md shadow-lg z-10 transition-all duration-300 transform origin-top",
-                      activeDropdown === link.name 
-                        ? "opacity-100 scale-100" 
+                      activeDropdown === link.name
+                        ? "opacity-100 scale-100"
                         : "opacity-0 scale-95 pointer-events-none"
                     )}
                   >
@@ -154,15 +150,15 @@ const Navbar = () => {
 
           {/* Contact Info */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a 
-              href="tel:+250788881370" 
+            <a
+              href="tel:+250788881370"
               className="flex items-center text-secondary hover:text-primary transition-colors"
             >
               <Phone size={18} className="mr-2" />
               <span className="font-medium">+250 788 409 258</span>
             </a>
-            <Link 
-              to="/contact" 
+            <Link
+              to="/contact"
               className="btn btn-primary rounded-full px-6 py-2"
             >
               Contact Us
@@ -170,7 +166,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="lg:hidden focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -179,7 +175,7 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile Navigation */}
-        <div 
+        <div
           className={cn(
             "lg:hidden fixed inset-0 bg-white z-40 pt-20 px-6 transition-all duration-300 ease-in-out transform",
             isOpen ? "translate-x-0" : "translate-x-full"
@@ -190,12 +186,12 @@ const Navbar = () => {
               <div key={link.name} className="py-2 border-b border-gray-100">
                 {link.dropdown ? (
                   <div>
-                    <button 
+                    <button
                       onClick={() => toggleDropdown(link.name)}
                       className={cn(
                         "flex items-center justify-between w-full transition-colors",
                         location.pathname === link.path || location.pathname.startsWith(link.path + '/')
-                          ? "text-primary" 
+                          ? "text-primary"
                           : "text-gray-700 hover:text-primary"
                       )}
                     >
@@ -205,8 +201,8 @@ const Navbar = () => {
                         activeDropdown === link.name ? "rotate-180" : ""
                       )} />
                     </button>
-                    
-                    <div 
+
+                    <div
                       className={cn(
                         "mt-2 pl-4 space-y-2 transition-all duration-200",
                         activeDropdown === link.name ? "block" : "hidden"
@@ -218,8 +214,8 @@ const Navbar = () => {
                           to={item.path}
                           className={cn(
                             "flex items-center py-2 hover:text-primary",
-                            location.pathname === item.path 
-                              ? "text-primary" 
+                            location.pathname === item.path
+                              ? "text-primary"
                               : "text-gray-600"
                           )}
                           onClick={() => setIsOpen(false)}
@@ -231,12 +227,12 @@ const Navbar = () => {
                     </div>
                   </div>
                 ) : (
-                  <Link 
-                    to={link.path} 
+                  <Link
+                    to={link.path}
                     className={cn(
                       "block transition-colors",
                       location.pathname === link.path
-                        ? "text-primary" 
+                        ? "text-primary"
                         : "text-gray-700 hover:text-primary"
                     )}
                     onClick={() => setIsOpen(false)}
@@ -246,18 +242,18 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-            
+
             <div className="pt-6 mt-6 border-t border-gray-100">
-              <a 
-                href="tel:+250788881370" 
+              <a
+                href="tel:+250788881370"
                 className="flex items-center text-secondary hover:text-primary transition-colors"
               >
                 <Phone size={18} className="mr-2" />
                 <span className="font-medium">+250 788 409 258</span>
               </a>
-              
-              <Link 
-                to="/contact" 
+
+              <Link
+                to="/contact"
                 className="btn btn-primary w-full mt-4 py-3 rounded-md text-center"
                 onClick={() => setIsOpen(false)}
               >

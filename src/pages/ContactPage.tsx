@@ -52,7 +52,7 @@ const ContactPage = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Contact Details</h3>
               <p className="text-gray-600 mb-4">
-                Phone: +250 788 881 370<br />
+                Phone: +250 788 409 258<br />
                 Email: engineeringmanpowerprovidersltd@gmail.com
               </p>
               <div className="flex space-x-4">

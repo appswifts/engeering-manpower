@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
+
   // All shared images for the slideshow
   const backgroundImages = [
     "/lovable-uploads/922530ef-229a-4775-916b-797d76e599ef.png",
@@ -24,24 +24,24 @@ const HeroSection = () => {
 
   useEffect(() => {
     setIsVisible(true);
-    
+
     // Set up the image slideshow
     const slideInterval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
+      setCurrentImageIndex((prevIndex) =>
         prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000); // Change image every 5 seconds
-    
+
     return () => clearInterval(slideInterval);
   }, []);
 
   return (
     <section className="relative min-h-screen flex items-center py-20 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 to-secondary/70 z-10"></div>
-      
+
       {/* Background images with fade transition */}
       {backgroundImages.map((image, index) => (
-        <div 
+        <div
           key={index}
           className={cn(
             "absolute inset-0 bg-cover bg-center z-0 transition-opacity duration-1000",
@@ -50,7 +50,7 @@ const HeroSection = () => {
           style={{ backgroundImage: `url("${image}")` }}
         ></div>
       ))}
-      
+
       <div className="container-fluid relative z-20">
         <div className="max-w-3xl">
           <div className={cn(
@@ -58,7 +58,7 @@ const HeroSection = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           )}>
             <span className="inline-block px-4 py-1.5 bg-primary/90 text-white rounded-full text-sm font-medium mb-6 animate-pulse-slow">
-              Engineering Manpower Provider
+              EMP Engineering Manpower Providers
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Where Quality <span className="text-primary">Engineering</span> Talent Has a Name
@@ -66,7 +66,7 @@ const HeroSection = () => {
             <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl">
               We offer a wide range of services including engineering staffing, technical training, consulting, and project management to help your business achieve excellence.
             </p>
-            
+
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/contact"

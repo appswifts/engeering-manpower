@@ -47,7 +47,7 @@ const AboutPage = () => {
   ];
 
   const milestones = [
-    { year: 1995, title: "Company founded", description: "Established with a mission to provide premium engineering talent." },
+    { year: 2022, title: "Company founded", description: "Established with a mission to provide premium engineering talent." },
     { year: 2000, title: "Expanded services", description: "Added technical training to our service offerings." },
     { year: 2005, title: "International partnerships", description: "Formed strategic alliances with global engineering firms." },
     { year: 2010, title: "Training center launch", description: "Opened state-of-the-art technical training facility." },
@@ -167,7 +167,7 @@ const AboutPage = () => {
               </h2>
               
               <p className="text-gray-600 mb-6">
-                Since 1995, Engineering Manpower Provider has established a premier reputation for excellence in providing engineering talent and technical services. Our dedication to quality and precision has made us a trusted partner for organizations seeking top-tier engineering expertise.
+                Since 2022, Engineering Manpower Provider has established a premier reputation for excellence in providing engineering talent and technical services. Our dedication to quality and precision has made us a trusted partner for organizations seeking top-tier engineering expertise.
               </p>
               
               <p className="text-gray-600 mb-8">
@@ -234,7 +234,7 @@ const AboutPage = () => {
           <SectionTitle
             subtitle="Our Journey"
             title="Our History"
-            description="Since 1995, we've been on a mission to provide exceptional engineering talent and services."
+            description="Since 2, we've been on a mission to provide exceptional engineering talent and services."
           />
           
           <div className="relative mt-16 max-w-4xl mx-auto">

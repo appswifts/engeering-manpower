@@ -1,17 +1,17 @@
+import { useState } from 'react';
+import { Facebook, Twitter, Linkedin, Instagram, Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
+  const [isScrolled] = useState(false); // Shared state with Header for consistency
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container-fluid">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="flex items-center">
-              <span className="text-2xl font-bold text-primary">Engineering</span>
-              <span className="text-2xl font-bold text-white ml-1">Manpower</span>
-            </div>
+            <Logo variant="dark" className="mb-4" />
             <p className="text-gray-300 max-w-xs">
               Providing high-quality engineering talent and technical solutions since 1995.
             </p>
@@ -124,7 +124,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} Engineering Manpower Provider. All rights reserved.
+              &copy; {new Date().getFullYear()} EMP Engineering Manpower Providers. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy-policy" className="text-gray-400 hover:text-primary text-sm transition-colors">
