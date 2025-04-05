@@ -159,7 +159,7 @@ const Navbar = () => {
               className="flex items-center text-secondary hover:text-primary transition-colors"
             >
               <Phone size={18} className="mr-2" />
-              <span className="font-medium">+250 788 881 370</span>
+              <span className="font-medium">+250 788 409 258</span>
             </a>
             <Link 
               to="/contact" 
@@ -253,7 +253,7 @@ const Navbar = () => {
                 className="flex items-center text-secondary hover:text-primary transition-colors"
               >
                 <Phone size={18} className="mr-2" />
-                <span className="font-medium">+250 788 881 370</span>
+                <span className="font-medium">+250 788 409 258</span>
               </a>
               
               <Link 
