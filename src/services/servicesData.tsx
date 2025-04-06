@@ -362,7 +362,7 @@ export const servicesList: Service[] = [
       <p>With our team of environmental specialists and safety professionals, we deliver comprehensive solutions that address the complex challenges of environmental management and occupational safety. We are committed to promoting sustainable practices and creating safer workplaces through effective consultation and practical implementation strategies.</p>
     `,
     offerings: [
-      'Environmental impact assessments',
+      
       'Occupational health and safety audits',
       'Compliance guidance and monitoring',
       'Risk assessment and management',
