@@ -150,7 +150,7 @@ const Navbar = () => {
           {/* Contact Info */}
           <div className="hidden lg:flex items-center space-x-4">
             <a
-              href="tel:+250788881370"
+              href="tel:+250788409258"
               className="flex items-center text-secondary hover:text-primary transition-colors"
             >
               <Phone size={18} className="mr-2" />
