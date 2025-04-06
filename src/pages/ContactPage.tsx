@@ -56,7 +56,7 @@ const ContactPage = () => {
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="tel:+250788881370"
+                  href="tel:+250788409258"
                   className="text-primary font-medium hover:text-primary-600 transition-colors"
                 >
                   Call Us
