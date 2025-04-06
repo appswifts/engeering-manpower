@@ -13,7 +13,7 @@ const ContactSection = () => {
     const message = (document.getElementById('message') as HTMLTextAreaElement)?.value;
     
     const whatsappMessage = `*New Inquiry*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Subject:* ${subject}%0A*Message:* ${message}`;
-    window.open(`https://wa.me/250788881370?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/250788409258?text=${whatsappMessage}`, '_blank');
   };
 
   return (
